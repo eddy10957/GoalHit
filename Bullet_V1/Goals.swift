@@ -5,6 +5,7 @@ struct Goals: View {
         
         VStack {
             Text("Goals")
+                .font(.body)
         }
     }
 }
