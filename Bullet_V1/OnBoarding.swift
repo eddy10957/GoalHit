@@ -3,7 +3,6 @@ import SwiftUI
 
 struct OnboardingElement: View {
     
-    
     var titleText: String
     var image: Image
     var subtitleText: String
@@ -32,6 +31,7 @@ struct OnboardingElement: View {
 
 
 struct Onboarding: View {
+    
     @Binding var isPresented: Bool
     
     var body: some View {

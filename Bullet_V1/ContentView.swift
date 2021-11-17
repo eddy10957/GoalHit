@@ -2,7 +2,7 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    //@Environment(\.managedObjectContext) private var viewContext
     
     @State var show_OnBoarding = false
     
@@ -12,7 +12,7 @@ struct ContentView: View {
                 
             }
         }
-        .onAppear(perform: {show_OnBoarding = true})
+        .onAppear(perform: {show_OnBoarding = false})
         .sheet(isPresented: $show_OnBoarding, content: {
             Onboarding(isPresented: $show_OnBoarding)
         })
