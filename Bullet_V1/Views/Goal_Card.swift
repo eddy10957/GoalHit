@@ -1,16 +1,8 @@
-import Foundation
-import SwiftUI
+//
+//  Goal_Card.swift
+//  Bullet_V1
+//
+//  Created by Francesco Maria Di Donna on 17/11/21.
+//
 
-struct GoalCard : View{
-    
-    var goal_Name : String
-    
-    
-    var body: some View{
-        ZStack{
-            VStack{
-            
-            }
-        }
-    }
-}
+import Foundation
