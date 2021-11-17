@@ -7,6 +7,7 @@ struct Goals: View {
             Text("Goals")
                 .font(.body)
                 .foregroundColor(.green)
+                .bold()
         }
     }
 }
