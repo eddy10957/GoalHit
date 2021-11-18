@@ -9,14 +9,90 @@ import Foundation
 import SwiftUI
 
 struct Modal_View_Goal_Element : View{
+    
+    @State var circular_progress_bar : Float = 10
+    @State var hour_value : Int = 20
+    
     var body: some View{
-        ZStack{
+        NavigationView{
             VStack{
-                Text("Ciao")
+                HStack {
+                    VStack{
+                        Text("Color")
+                        Circle()
+                            .fill()
+                            .foregroundColor(Color.red)
+                            .frame(width: 30, height: 30)
+                        
+                    }
+                    .padding(.trailing)
+                    
+                    VStack{
+                        Text("Badge")
+                        Text("􀫓")
+                    }
+                    .padding()
+                    Spacer()
+                }
+                .foregroundColor(.black)
+                .padding()
+                VStack{
+                    HStack{
+                        Text("Due Date:")
+                        Spacer()
+                        Text("Ci va la data")
+                    }
+                    .padding()
+                    HStack{
+                        Text("Hour Amount:") // altra variabile
+                        Spacer() // lo scrivo ma in realtà già la sappiamo
+                        Text("Ore mancanti") // qua va la variabile
+                            .padding()
+                    }
+                    .padding(.leading)
+                    VStack{
+                        CircularProgressBar(progress: $circular_progress_bar)
+                            .frame(width: 200, height: 200)
+                        
+                    }
+                    .padding()
+                    VStack {
+                        Text("Add Hours")
+                        HStack {
+                            Spacer()
+                            Stepper("", value: $hour_value, in: 0...hour_value, step: 1)
+                                .frame(width: 100, height: 100)
+                            Spacer()
+                        }
+                        .padding(.top, -30.0)
+                    }
+                }
+                .foregroundColor(.black)
+                Spacer()
             }
+            
+            .navigationBarTitle(Text("NameGoal"), displayMode: .inline)
+            .navigationBarItems(leading: Button{
+                
+            } label: {
+                Text("Cancel")
+            }, trailing: Button{} label: {
+                Text("Edit")
+            })
+            .foregroundColor(.green)
         }
+        
     }
 }
+
+/*struct Modal_View_Goal : View{
+ 
+ @Binding var isShowedModalGoal : Bool
+ var body: some View{
+ 
+ }
+ }
+ */
 
 
 struct Modal_View_Goal_Element_Previews: PreviewProvider {

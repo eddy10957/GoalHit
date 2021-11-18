@@ -4,7 +4,6 @@ struct CircularProgressBar: View {
     
     @Binding var progress: Float
 
-    
     var body: some View {
         ZStack {
             Circle()
@@ -24,5 +23,3 @@ struct CircularProgressBar: View {
         }
     }
 }
-
-

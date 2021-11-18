@@ -24,7 +24,7 @@
 		6AA235E727440DD500E931CF /* Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E627440DD500E931CF /* Rewards.swift */; };
 		6AA235E927440DE300E931CF /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E827440DE300E931CF /* TabBar.swift */; };
 		6AB9811F2744165900C1ECF2 /* Study_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9811E2744165900C1ECF2 /* Study_Class.swift */; };
-		AA8FC30D27468293005A0A09 /* CircuarProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC30C27468293005A0A09 /* CircuarProgressBar.swift */; };
+		AA8FC30D27468293005A0A09 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC30C27468293005A0A09 /* CircularProgressBar.swift */; };
 		AAD2F065274654CE00E60D8C /* RewardsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2F064274654CE00E60D8C /* RewardsRow.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +66,7 @@
 		6AA235E627440DD500E931CF /* Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewards.swift; sourceTree = "<group>"; };
 		6AA235E827440DE300E931CF /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		6AB9811E2744165900C1ECF2 /* Study_Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_Class.swift; sourceTree = "<group>"; };
-		AA8FC30C27468293005A0A09 /* CircuarProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuarProgressBar.swift; sourceTree = "<group>"; };
+		AA8FC30C27468293005A0A09 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		AAD2F064274654CE00E60D8C /* RewardsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,7 +173,7 @@
 				6A3538D527455FB300DC61A2 /* Goals_View.swift */,
 				6A3538D72745673000DC61A2 /* Goal_Card.swift */,
 				AAD2F064274654CE00E60D8C /* RewardsRow.swift */,
-				AA8FC30C27468293005A0A09 /* CircuarProgressBar.swift */,
+				AA8FC30C27468293005A0A09 /* CircularProgressBar.swift */,
 				6A9BC58127469CBB008FE217 /* Modal_View_Goal.swift */,
 			);
 			path = Views;
@@ -311,7 +311,7 @@
 			files = (
 				6AB9811F2744165900C1ECF2 /* Study_Class.swift in Sources */,
 				6AA235B727440CD800E931CF /* ContentView.swift in Sources */,
-				AA8FC30D27468293005A0A09 /* CircuarProgressBar.swift in Sources */,
+				AA8FC30D27468293005A0A09 /* CircularProgressBar.swift in Sources */,
 				6A3538D627455FB300DC61A2 /* Goals_View.swift in Sources */,
 				6AA235B527440CD800E931CF /* Bullet_V1App.swift in Sources */,
 				6A9BC58227469CBB008FE217 /* Modal_View_Goal.swift in Sources */,

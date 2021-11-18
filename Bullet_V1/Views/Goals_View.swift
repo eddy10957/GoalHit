@@ -2,7 +2,8 @@ import SwiftUI
 
 struct Goals: View {
     var body: some View {
-        ScrollView{
+        NavigationView{
+            ScrollView{
                 VStack{
                     GoalCardBig()
                     VStack{
@@ -13,12 +14,14 @@ struct Goals: View {
                         HStack{
                             GoalCard()
                             GoalCard()
-
+                            
                         }
                     }
                 }
             }
+            .navigationTitle("Goals")
         }
+    }
 }
 
 struct Goals_Previews: PreviewProvider {
