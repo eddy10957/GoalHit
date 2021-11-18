@@ -23,6 +23,7 @@
 		6AA235E727440DD500E931CF /* Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E627440DD500E931CF /* Rewards.swift */; };
 		6AA235E927440DE300E931CF /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E827440DE300E931CF /* TabBar.swift */; };
 		6AB9811F2744165900C1ECF2 /* Study_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9811E2744165900C1ECF2 /* Study_Class.swift */; };
+		AAD2F065274654CE00E60D8C /* RewardsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2F064274654CE00E60D8C /* RewardsRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		6AA235E627440DD500E931CF /* Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewards.swift; sourceTree = "<group>"; };
 		6AA235E827440DE300E931CF /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		6AB9811E2744165900C1ECF2 /* Study_Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_Class.swift; sourceTree = "<group>"; };
+		AAD2F064274654CE00E60D8C /* RewardsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				6AA235E827440DE300E931CF /* TabBar.swift */,
 				6A3538D527455FB300DC61A2 /* Goals_View.swift */,
 				6A3538D72745673000DC61A2 /* Goal_Card.swift */,
+				AAD2F064274654CE00E60D8C /* RewardsRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				6AA235DF27440D2600E931CF /* Canvas.swift in Sources */,
 				6A3538D82745673000DC61A2 /* Goal_Card.swift in Sources */,
 				6AA235E927440DE300E931CF /* TabBar.swift in Sources */,
+				AAD2F065274654CE00E60D8C /* RewardsRow.swift in Sources */,
 				6AA235E327440D9A00E931CF /* Goal_Card_Big.swift in Sources */,
 				6AA235E527440DAF00E931CF /* OnBoarding.swift in Sources */,
 				6AA235E127440D7300E931CF /* Goal_Class.swift in Sources */,
