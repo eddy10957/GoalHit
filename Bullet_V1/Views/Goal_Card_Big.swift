@@ -17,21 +17,29 @@ struct GoalCardBig : View{
                         LinearGradient(gradient: Gradient(colors: self.hueColors) , startPoint:.top, endPoint:.bottom))
             }
             VStack{
-            HStack{
-            
-            Text("Study Goal")
-                .font(.largeTitle)
-                .padding()
-                
-                Spacer()
-                
-                Image(systemName: "ellipsis.circle")
-                    .padding()
-                    .font(.system(size: 40))
-            
-            }
-            CircularProgressBar(progress: $progress)
-                .frame(width: 200, height: 180)
+                HStack{
+                    
+                    Text("Study Goal")
+                        .font(.largeTitle)
+                        .padding()
+                        .foregroundColor(.white)
+                    
+                    Spacer()
+                    
+                    Button{
+                        print("Button tapped!")
+                    }
+                    label :{
+                        Image(systemName: "ellipsis.circle")
+                            .padding()
+                            .font(.system(size: 40))
+                            .foregroundColor(.white)
+                    }
+                    
+                    
+                }
+                CircularProgressBar(progress: $progress)
+                    .frame(width: 200, height: 180)
             }
         }
         .frame(width: 350 , height: 400)
