@@ -6,36 +6,32 @@ import Foundation
 import SwiftUI
 
 struct GoalCard : View{
-    
+    @State var progress :Float = 0.18
     var radius : CGFloat = 20
-    let hueColors = stride (from: 0, to: 1, by: 0.2).map{
-        Color(hue: $0, saturation: 0.5, brightness: 1)
-    }
+   
     
     var body: some View{
-        ZStack(alignment: .topLeading){
-            ZStack{
-                
+        ZStack(){
+//            ZStack{
                 RoundedRectangle(cornerRadius: radius)
                     .strokeBorder(.gray)
-            }
-            VStack{
-                
-                Spacer()
-                
-                VStack{
-                    Spacer()
+//            }
+
+                VStack(alignment: .center){
                     
+                    CircularProgressBar(progress: $progress)
+                        .padding([.top, .bottom, .trailing])
+                    VStack(alignment: .center){
                     Text("Study Goal")
                         .font(.system(size: 17.0))
                         .fontWeight(.bold)
-                        .padding()
                     Text("placeholder details")
                         .font(.system(size: 15.0))
                         .fontWeight(.light)
-                        .padding()
+                    }
+                    .padding(.bottom, 4.0)
                 }
-            }
+                .padding(.leading, 14.0)
         }
         .frame(width: 182, height: 227)
     }
