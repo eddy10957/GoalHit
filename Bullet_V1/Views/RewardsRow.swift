@@ -4,6 +4,9 @@
 //
 //  Created by Edoardo Troianiello on 18/11/21.
 //
+// TODO: aggiungere la logica di quando un bagde non è completato
+//codice in fondo alla pagina
+
 
 import SwiftUI
 
@@ -91,3 +94,24 @@ struct RewardsRow_Previews: PreviewProvider {
         RewardsRow(badgeIcon: "🎓")
     }
 }
+
+//struct BadgeBlack: View {
+//var body: some View {
+//    Circle()
+//        .foregroundColor(Color.gray_2)
+//        .padding()
+//        .opacity(0.71)
+//}
+//}
+//
+//struct BadgeBlack_Previews: PreviewProvider {
+//static var previews: some View {
+//    BadgeBlack()
+//}
+//}
+//
+//extension Color{
+//
+//static let gray_2 = Color(red: 99 / 255, green: 97 / 255, blue: 94 / 255)
+//
+//}

@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				AA2C01BC2745665800EBE010 /* Views */,
-				AA2C01BB2745663B00EBE010 /* Modal */,
+				AA2C01BB2745663B00EBE010 /* Model */,
 				6AA235B427440CD800E931CF /* Bullet_V1App.swift */,
 				6AA235B827440CD800E931CF /* Assets.xcassets */,
 				6AA235BA27440CD800E931CF /* Preview Content */,
@@ -148,13 +148,13 @@
 			path = Bullet_V1UITests;
 			sourceTree = "<group>";
 		};
-		AA2C01BB2745663B00EBE010 /* Modal */ = {
+		AA2C01BB2745663B00EBE010 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				6AA235E027440D7300E931CF /* Goal_Class.swift */,
 				6AB9811E2744165900C1ECF2 /* Study_Class.swift */,
 			);
-			path = Modal;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AA2C01BC2745665800EBE010 /* Views */ = {
