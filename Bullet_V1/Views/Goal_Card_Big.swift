@@ -29,7 +29,7 @@ struct GoalCardBig : View{
             
             }
         }
-        .frame(width: 350, height: 400)
+        .frame(width: 350 , height: 400)
     }
 }
 
