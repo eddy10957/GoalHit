@@ -22,14 +22,15 @@ struct Modal_View_Goal_Element : View{
                         Circle()
                             .fill()
                             .foregroundColor(Color.red)
-                            .frame(width: 30, height: 30)
+                            .frame(width: 50, height: 50)
                         
                     }
                     .padding(.trailing)
                     
                     VStack{
                         Text("Badge")
-                        Text("􀫓")
+                        Text("🎓")
+                            .font(.system(size: 50))
                     }
                     .padding()
                     Spacer()
@@ -72,13 +73,16 @@ struct Modal_View_Goal_Element : View{
             }
             
             .navigationBarTitle(Text("NameGoal"), displayMode: .inline)
-            .navigationBarItems(leading: Button{
-                
-            } label: {
-                Text("Cancel")
-            }, trailing: Button{} label: {
-                Text("Edit")
-            })
+            .navigationBarItems(
+                leading: Button{
+                    
+                } label: {
+                    Text("Cancel")
+                }, trailing: Button{
+                    
+                } label: {
+                    Text("Edit")
+                })
             .foregroundColor(.green)
         }
         
