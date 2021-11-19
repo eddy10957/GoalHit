@@ -22,55 +22,68 @@ struct ModalViewEdit : View{
     
     var body: some View{
         NavigationView{
-            VStack{
-                VStack(alignment: .leading){
-                    
-                    VStack {
-                        Text("Goal Name:")
-                            .padding(.leading, 18.0)
-                        
-                        
-                        TextField("\(goalName)",text: $goalName)
-                            .font(.system(size: 30))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.center)
+            Form{
+//                VStack(alignment: .leading){
+                    Section{
+                        HStack{
+                            
+                            Text("Goal Name:")
+                                .padding(.leading)
+                            
+                            
+                            TextField("\(goalName)",text: $goalName)
+                                .font(.system(size: 20))
+                                .foregroundColor(.black)
+                                .multilineTextAlignment(.trailing)
+                        }
                     }
-                    VStack{
-                        
-                        Text("Color")
-                        Circle()
-                            .fill()
-                            .foregroundColor(selectedColor)
-                            .frame(width: 50, height: 50)
-                        
-                        ColorPicker("Change Goal Color", selection: $selectedColor)
-                            .padding()
+                    Section{
+                        HStack{
+                            
+                            Text("Color")
+                                .padding(.leading)
+                            Circle()
+                                .fill()
+                                .foregroundColor(selectedColor)
+                                .frame(width: 50, height: 50)
+                            
+                            ColorPicker("Change Goal Color", selection: $selectedColor)
+                                .padding()
+                        }
+                        HStack{
+                        Text("Badge")
+                            .padding(.leading)
+                        TextField(
+                            "\(badge)",text: $badge)
+                            .font(.system(size: 50))
+//                            .padding()
+                            .multilineTextAlignment(.trailing)
+                            
+                        }
                     }
-                    
-                    Text("Badge")
-                        .padding(.leading, 18.0)
-                    TextField(
-                        "\(badge)",text: $badge)
-                        .font(.system(size: 50))
-                        .padding()
                     
                     //                    TODO: Restyling picker ??
                     DatePicker("Due Date for your goal", selection: $dueDate, displayedComponents: .date)
                         .datePickerStyle(CompactDatePickerStyle())
+                        
                     
                         .padding()
                     
                     
-                    
+                HStack{
                     Text("Hour Amount Goal:")
-                        .padding(.leading, 18.0)
+                        .padding(.leading)
                     
                     TextField("\(hourAmount)",text: $hourAmount)
                     //                            .font(.system(size: 20))
                         .foregroundColor(.black)
-                        .multilineTextAlignment(.center)
-                    Spacer()
+                        .multilineTextAlignment(.trailing)
                 }
+                
+                Section{
+                    
+                }
+//                }
                 .padding()
             }
             .navigationBarTitle(Text("\(goalName)"), displayMode: .inline)

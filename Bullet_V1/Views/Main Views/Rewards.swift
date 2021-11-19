@@ -25,8 +25,8 @@ struct Rewards: View {
                 }
                 
                 RewardsRow(badgeIcon: "🎓")
-                    
-            
+                
+                
                 HStack {
                     
                     Text("Sport")
@@ -36,9 +36,9 @@ struct Rewards: View {
                 }
                 
                 RewardsRow(badgeIcon: "🏀")
-
-            
-      
+                
+                
+                
                 HStack {
                     
                     Text("Training")
@@ -49,13 +49,11 @@ struct Rewards: View {
                 
                 RewardsRow(badgeIcon: "🏋️")
                 
-            
-            
             }
             .padding(.horizontal, 5.0)
+        }
+        
     }
-    
-}
 }
 
 extension Color{
@@ -68,6 +66,8 @@ extension Color{
     
     static let gold = Color(red: 253 / 255, green: 251 / 255, blue: 231 / 255)
     static let gold_border = Color(red: 255 / 255, green: 214 / 255, blue: 10 / 255)
+    static let gray_2 = Color(red: 99 / 255, green: 97 / 255, blue: 94 / 255)
+    
     
 }
 
