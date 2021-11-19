@@ -11,6 +11,8 @@ struct GoalCardBig : View{
         Color(hue: $0, saturation: 0.5, brightness: 1)
     }
     
+    //@Binding var isPressedForModal : Bool
+    
     var body: some View{
         ZStack(alignment: .topLeading){
             VStack{
@@ -30,6 +32,7 @@ struct GoalCardBig : View{
                     
                     Button{
                         print("Button tapped!")
+                        //self.isPressedForModal = true
                     }
                     label :{
                         Image(systemName: "ellipsis.circle")

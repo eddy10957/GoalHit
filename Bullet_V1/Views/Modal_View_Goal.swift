@@ -9,12 +9,14 @@ import Foundation
 import SwiftUI
 
 struct Modal_View_Goal_Element : View{
-//    TODO: prendere le info dell oggetto senza ridichiararlo EnvironmentObject ??
+    //    TODO: prendere le info dell oggetto senza ridichiararlo EnvironmentObject ??
     
     @ObservedObject var studyGoal1 = Study_Class(nameGoal: "Math Exam", colorGoal: .blue, badgeGoal: "🎓", percentageGoal: 0.30, dueDate: "17-12-2021", hourAmount: 30.0, studiedHours: 9.0)
     
-//TODO: NON HO CAPITO LO STEPPER
+    //TODO: NON HO CAPITO LO STEPPER
     @State var hour_value : Int = 20
+    
+    @State var isPressedForModal : Bool = false
     
     var body: some View{
         NavigationView{
@@ -92,14 +94,17 @@ struct Modal_View_Goal_Element : View{
     }
 }
 
-/*struct Modal_View_Goal : View{
- 
- @Binding var isShowedModalGoal : Bool
- var body: some View{
- 
- }
- }
- */
+struct OnBoardingModalGoal : View{
+    
+    @Binding var isShowedModalGoal : Bool
+    
+    var body: some View{
+        VStack{
+            Modal_View_Goal_Element()
+        }
+    }
+}
+
 
 
 struct Modal_View_Goal_Element_Previews: PreviewProvider {
