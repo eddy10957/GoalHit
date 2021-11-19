@@ -36,7 +36,7 @@ struct Onboarding: View {
     
     var body: some View {
         VStack {
-            Text("Welcome to\n Bullet!")
+            Text("Welcome to\n GoalHit!")
                 .font(.system(size: 45))
                 .bold()
                 .multilineTextAlignment(.center)
