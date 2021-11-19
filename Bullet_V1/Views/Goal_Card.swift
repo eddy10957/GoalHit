@@ -6,7 +6,7 @@ import Foundation
 import SwiftUI
 
 struct GoalCard : View{
-    @ObservedObject var studyGoal2 = Study_Class(nameGoal: "FCE Exam", colorGoal: .black, badgeGoal: "🎓", percentageGoal: 0.22, dueDate: "20-12-2021", hourAmount: 100.0, studiedHours: 22.0)
+    @ObservedObject var goal : Goal_Class
 
     var radius : CGFloat = 20
    
@@ -15,15 +15,15 @@ struct GoalCard : View{
         ZStack(){
 //            ZStack{
                 RoundedRectangle(cornerRadius: radius)
-                .strokeBorder(studyGoal2.colorGoal)
+                .strokeBorder(goal.colorGoal)
 //            }
 
                 VStack(alignment: .center){
                     
-                    CircularProgressBar(progress: $studyGoal2.percentageGoal , color: $studyGoal2.colorGoal )
+                    CircularProgressBar(progress: $goal.percentageGoal , color: $goal.colorGoal )
                         .padding([.top, .bottom, .trailing])
                     VStack(alignment: .center){
-                    Text("Study Goal")
+                        Text("\(goal.nameGoal)")
                         .font(.system(size: 17.0))
                         .fontWeight(.bold)
                     Text("placeholder details")
@@ -36,11 +36,14 @@ struct GoalCard : View{
         }
         .frame(width: 182, height: 227)
     }
+    
+    
+    
 }
 
 
-struct GoalCard_Previews: PreviewProvider {
-    static var previews: some View {
-        GoalCard()
-    }
-}
+//struct GoalCard_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GoalCard()
+//    }
+//}
