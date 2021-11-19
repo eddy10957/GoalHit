@@ -21,86 +21,9 @@ struct ModalViewEdit : View{
     @State var goalName: String = "Study Goal"
     
     var body: some View{
-        NavigationView{
-            Form{
-                Section{
-                    HStack{
-                        
-                        Text("Goal Name:")
-                            .padding(.leading)
-                        
-                        
-                        TextField("\(goalName)",text: $goalName)
-                            .font(.system(size: 20))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.trailing)
-                    }
-                }
-                Section{
-                    HStack{
-                        
-                        Text("Color")
-                            .padding(.leading)
-                        Circle()
-                            .fill()
-                            .foregroundColor(selectedColor)
-                            .frame(width: 50, height: 50)
-                        
-                        ColorPicker("Change Goal Color", selection: $selectedColor)
-                            .padding()
-                    }
-                    HStack{
-                        Text("Badge")
-                            .padding(.leading)
-                        TextField(
-                            "\(badge)",text: $badge)
-                            .font(.system(size: 50))
-                        //                            .padding()
-                            .multilineTextAlignment(.trailing)
-                        
-                    }
-                }
-                
-                //                    TODO: Restyling picker ??
-                DatePicker("Due Date for your goal", selection: $dueDate, displayedComponents: .date)
-                    .datePickerStyle(CompactDatePickerStyle())
-                
-                
-                    .padding()
-                
-                
-                HStack{
-                    Text("Hour Amount Goal:")
-                        .padding(.leading)
-                    
-                    TextField("\(hourAmount)",text: $hourAmount)
-                    //                            .font(.system(size: 20))
-                        .foregroundColor(.black)
-                        .multilineTextAlignment(.trailing)
-                }
-                
-                Section{
-                    
-                }
-                .padding()
-            }
-            .navigationBarTitle(Text("\(goalName)"), displayMode: .inline)
-            .navigationBarItems(
-                leading:
-                    Button{
-                        
-                    } label: {
-                        Text("Cancel")
-                    },
-                trailing:
-                    Button{
-                        
-                    } label: {
-                        Text("Done")
-                    })
-            .foregroundColor(.green)
+        VStack{
+            
         }
-        
     }
 }
 
