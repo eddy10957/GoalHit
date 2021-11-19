@@ -10,16 +10,18 @@ import SwiftUI
 
 struct Modal_View_Goal_Element : View{
     //    TODO: prendere le info dell oggetto senza ridichiararlo EnvironmentObject ??
-    
+
+    //Collego le variabili ma vanno sostituite con il backend
     @ObservedObject var studyGoal1 = Study_Class(nameGoal: "Math Exam", colorGoal: .blue, badgeGoal: "🎓", percentageGoal: 0.30, dueDate: "17-12-2021", hourAmount: 30.0, studiedHours: 9.0)
     
     //TODO: NON HO CAPITO LO STEPPER
     @State var hour_value : Int = 20
     @Binding var isPressedForModal : Bool
+    
     @State var edit : Bool = false
     
     var body: some View{
-        if edit{
+        if !edit{
             NavigationView{
                 VStack{
                     HStack {
@@ -47,13 +49,13 @@ struct Modal_View_Goal_Element : View{
                         HStack{
                             Text("Due Date:")
                             Spacer()
-                            Text("Ci va la data")
+                            Text("\(studyGoal1.dueDate)")
                         }
                         .padding()
                         HStack{
                             Text("Hour Amount:") // altra variabile
                             Spacer() // lo scrivo ma in realtà già la sappiamo
-                            Text("Ore mancanti") // qua va la variabile
+                            Text("\(Int(studyGoal1.hourAmount))") // qua va la variabile
                                 .padding()
                         }
                         .padding(.leading)
@@ -92,85 +94,7 @@ struct Modal_View_Goal_Element : View{
                 .foregroundColor(.green)
             }
         } else{
-            NavigationView{
-                Form{
-                    Section{
-                        HStack{
-                            
-                            Text("Goal Name:")
-                                .padding(.leading)
-                            
-                            
-                            TextField("\(studyGoal1.nameGoal)",text: $studyGoal1.nameGoal)
-                                .font(.system(size: 20))
-                                .foregroundColor(.black)
-                                .multilineTextAlignment(.trailing)
-                        }
-                    }
-                    Section{
-                        HStack{
-                            
-                            Text("Color")
-                                .padding(.leading)
-                            Circle()
-                                .fill()
-                                .foregroundColor(studyGoal1.colorGoal)
-                                .frame(width: 50, height: 50)
-                            
-                            ColorPicker("Change Goal Color", selection: $studyGoal1.colorGoal)
-                                .padding()
-                        }
-                        HStack{
-                            Text("Badge")
-                                .padding(.leading)
-                            TextField(
-                                "\(badge)",text: $studyGoal1.badgeGoal)
-                                .font(.system(size: 50))
-                            //                            .padding()
-                                .multilineTextAlignment(.trailing)
-                            
-                        }
-                    }
-                    
-                    //                    TODO: Restyling picker ??
-                    DatePicker("Due Date for your goal", selection: studyGoal1.dueDate, displayedComponents: .date)
-                        .datePickerStyle(CompactDatePickerStyle())
-                    
-                    
-                        .padding()
-                    
-                    
-                    HStack{
-                        Text("Hour Amount Goal:")
-                            .padding(.leading)
-                        
-                        TextField("\(studyGoal1.hourAmount)",text: $studyGoal1.hourAmount)
-                        //                            .font(.system(size: 20))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.trailing)
-                    }
-                    
-                    Section{
-                        
-                    }
-                    .padding()
-                }
-                .navigationBarTitle(Text("\(studyGoal1.nameGoal)"), displayMode: .inline)
-                .navigationBarItems(
-                    leading:
-                        Button{
-                            
-                        } label: {
-                            Text("Cancel")
-                        },
-                    trailing:
-                        Button{
-                            
-                        } label: {
-                            Text("Done")
-                        })
-                .foregroundColor(.green)
-            }
+            ModalViewEdit(edit: $edit)
         }
     }
 }

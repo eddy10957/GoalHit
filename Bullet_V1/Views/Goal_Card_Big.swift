@@ -45,8 +45,8 @@ struct GoalCardBig : View{
                 }
                 CircularProgressBar(progress: $studyGoal1.percentageGoal, color: $studyGoal1.colorGoal)
                     .frame(width: 200, height: 180)
-                
-                Text("\(studyGoal1.hourAmount - studyGoal1.studiedHours) hours left")
+//                 Spacer()
+                Text("\(Int(studyGoal1.hourAmount - studyGoal1.studiedHours)) hours left")
                     .foregroundColor(.white)
             }
         }
