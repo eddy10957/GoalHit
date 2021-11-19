@@ -1,13 +1,19 @@
 import Foundation
 import SwiftUI
 
-class Goal_Class{
+class Goal_Class : ObservableObject{
     
-    var name_goal : String = ""
-    var color_goal : Color = .white
-    var badge_goal : String = ""
-    var percentage_goal : Double = 0.0
+    var nameGoal : String = ""
+    var colorGoal : Color = .white
+    var badgeGoal : String = ""
+    var percentageGoal : Float = 0.0
     var isCompleted : Bool = false
     
+    init(nameGoal: String, colorGoal: Color, badgeGoal: String, percentageGoal: Float){
+        self.nameGoal = nameGoal
+        self.colorGoal = colorGoal
+        self.badgeGoal = badgeGoal
+        self.percentageGoal = percentageGoal
+    }
     public func progress_tracking(){}
 }

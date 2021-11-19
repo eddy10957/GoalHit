@@ -9,8 +9,11 @@ import Foundation
 import SwiftUI
 
 struct Modal_View_Goal_Element : View{
+//    TODO: prendere le info dell oggetto senza ridichiararlo EnvironmentObject ??
     
-    @State var circular_progress_bar : Float = 10
+    @ObservedObject var studyGoal1 = Study_Class(nameGoal: "Math Exam", colorGoal: .blue, badgeGoal: "🎓", percentageGoal: 0.30, dueDate: "17-12-2021", hourAmount: 30.0, studiedHours: 9.0)
+    
+//TODO: NON HO CAPITO LO STEPPER
     @State var hour_value : Int = 20
     
     var body: some View{
@@ -21,7 +24,7 @@ struct Modal_View_Goal_Element : View{
                         Text("Color")
                         Circle()
                             .fill()
-                            .foregroundColor(Color.red)
+                            .foregroundColor(studyGoal1.colorGoal)
                             .frame(width: 50, height: 50)
                         
                     }
@@ -52,7 +55,7 @@ struct Modal_View_Goal_Element : View{
                     }
                     .padding(.leading)
                     VStack{
-                        CircularProgressBar(progress: $circular_progress_bar)
+                        CircularProgressBar(progress: $studyGoal1.percentageGoal, color: $studyGoal1.colorGoal)
                             .frame(width: 200, height: 200)
                         
                     }

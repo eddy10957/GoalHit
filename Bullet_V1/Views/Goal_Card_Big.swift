@@ -3,7 +3,9 @@ import SwiftUI
 
 struct GoalCardBig : View{
     
-    @State var progress :Float = 0.18
+    @ObservedObject var studyGoal1 = Study_Class(nameGoal: "Math Exam", colorGoal: .blue, badgeGoal: "🎓", percentageGoal: 0.30, dueDate: "17-12-2021", hourAmount: 30.0, studiedHours: 9.0)
+    
+
     var radius : CGFloat = 20
     let hueColors = stride (from: 0, to: 1, by: 0.2).map{
         Color(hue: $0, saturation: 0.5, brightness: 1)
@@ -19,7 +21,7 @@ struct GoalCardBig : View{
             VStack{
                 HStack{
                     
-                    Text("Study Goal")
+                    Text("\(studyGoal1.nameGoal)")
                         .font(.largeTitle)
                         .padding()
                         .foregroundColor(.white)
@@ -38,8 +40,11 @@ struct GoalCardBig : View{
                     
                     
                 }
-                CircularProgressBar(progress: $progress)
+                CircularProgressBar(progress: $studyGoal1.percentageGoal, color: $studyGoal1.colorGoal)
                     .frame(width: 200, height: 180)
+                
+                Text("\(studyGoal1.hourAmount - studyGoal1.studiedHours) hours left")
+                    .foregroundColor(.white)
             }
         }
         .frame(width: 350 , height: 400)
