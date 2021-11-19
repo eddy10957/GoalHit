@@ -3,8 +3,7 @@ import SwiftUI
 struct Goals: View {
     
     @State var isPressedForModal = false
-    
-    
+        
     var body: some View {
         NavigationView{
             ScrollView{
@@ -24,9 +23,8 @@ struct Goals: View {
                 }
             }
             .navigationTitle("Goals")
-            
             .sheet(isPresented: $isPressedForModal, content: {OnBoardingModalGoal(isPressedForModal: $isPressedForModal)})
-                
+            
         }
     }
     
@@ -38,6 +36,8 @@ struct Goals: View {
     @ObservedObject var studyGoal4 = Study_Class(nameGoal: "Metodi Matematici", colorGoal: .red, badgeGoal: "🎓", percentageGoal: 0.1, dueDate: "20-12-2021", hourAmount: 100.0, studiedHours: 10.0)
     
     @ObservedObject var studyGoal5 = Study_Class(nameGoal: "Human interface Guidelines", colorGoal: .yellow, badgeGoal: "🎓", percentageGoal: 1.0, dueDate: "20-12-2021", hourAmount: 100.0, studiedHours: 100.0)
+    
+    
 }
 
 
