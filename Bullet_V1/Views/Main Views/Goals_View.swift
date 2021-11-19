@@ -1,11 +1,15 @@
 import SwiftUI
 
 struct Goals: View {
+    
+    @State var isPressedForModal = false
+    
+    
     var body: some View {
         NavigationView{
             ScrollView{
                 VStack{
-                    GoalCardBig()
+                    GoalCardBig(isPressedForModal: $isPressedForModal)
                     VStack{
                         HStack{
                             GoalCard(goal: studyGoal2)
@@ -20,6 +24,9 @@ struct Goals: View {
                 }
             }
             .navigationTitle("Goals")
+            
+            .sheet(isPresented: $isPressedForModal, content: {OnBoardingModalGoal(isPressedForModal: $isPressedForModal)})
+                
         }
     }
     
@@ -41,3 +48,4 @@ struct Goals_Previews: PreviewProvider {
         Goals()
     }
 }
+

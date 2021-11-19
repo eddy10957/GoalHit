@@ -170,7 +170,6 @@
 				6AA235E227440D9A00E931CF /* Goal_Card_Big.swift */,
 				6AA235B627440CD800E931CF /* ContentView.swift */,
 				6AA235E427440DAF00E931CF /* OnBoarding.swift */,
-				6AA235E827440DE300E931CF /* TabBar.swift */,
 				6A3538D72745673000DC61A2 /* Goal_Card.swift */,
 				AAD2F064274654CE00E60D8C /* RewardsRow.swift */,
 				AA8FC30C27468293005A0A09 /* CircularProgressBar.swift */,
@@ -183,6 +182,7 @@
 		AA4652062747CE9C00AABF25 /* Main Views */ = {
 			isa = PBXGroup;
 			children = (
+				6AA235E827440DE300E931CF /* TabBar.swift */,
 				6A3538D527455FB300DC61A2 /* Goals_View.swift */,
 				6AA235E627440DD500E931CF /* Rewards.swift */,
 				6AA235DE27440D2600E931CF /* Canvas.swift */,

@@ -15,8 +15,7 @@ struct Modal_View_Goal_Element : View{
     
     //TODO: NON HO CAPITO LO STEPPER
     @State var hour_value : Int = 20
-    
-    @State var isPressedForModal : Bool = false
+    @Binding var isPressedForModal : Bool
     
     var body: some View{
         NavigationView{
@@ -80,7 +79,7 @@ struct Modal_View_Goal_Element : View{
             .navigationBarTitle(Text("NameGoal"), displayMode: .inline)
             .navigationBarItems(
                 leading: Button{
-                    
+                    self.isPressedForModal = false
                 } label: {
                     Text("Cancel")
                 }, trailing: Button{
@@ -94,21 +93,23 @@ struct Modal_View_Goal_Element : View{
     }
 }
 
-struct OnBoardingModalGoal : View{
+public struct OnBoardingModalGoal : View{
     
-    @Binding var isShowedModalGoal : Bool
+    @Binding var isPressedForModal : Bool
+
     
-    var body: some View{
+   public var body: some View{
         VStack{
-            Modal_View_Goal_Element()
+                Modal_View_Goal_Element(isPressedForModal: $isPressedForModal)
         }
     }
 }
 
 
 
-struct Modal_View_Goal_Element_Previews: PreviewProvider {
+/*struct Modal_View_Goal_Element_Previews: PreviewProvider {
     static var previews: some View {
         Modal_View_Goal_Element()
     }
 }
+*/

@@ -23,53 +23,52 @@ struct ModalViewEdit : View{
     var body: some View{
         NavigationView{
             Form{
-//                VStack(alignment: .leading){
-                    Section{
-                        HStack{
-                            
-                            Text("Goal Name:")
-                                .padding(.leading)
-                            
-                            
-                            TextField("\(goalName)",text: $goalName)
-                                .font(.system(size: 20))
-                                .foregroundColor(.black)
-                                .multilineTextAlignment(.trailing)
-                        }
+                Section{
+                    HStack{
+                        
+                        Text("Goal Name:")
+                            .padding(.leading)
+                        
+                        
+                        TextField("\(goalName)",text: $goalName)
+                            .font(.system(size: 20))
+                            .foregroundColor(.black)
+                            .multilineTextAlignment(.trailing)
                     }
-                    Section{
-                        HStack{
-                            
-                            Text("Color")
-                                .padding(.leading)
-                            Circle()
-                                .fill()
-                                .foregroundColor(selectedColor)
-                                .frame(width: 50, height: 50)
-                            
-                            ColorPicker("Change Goal Color", selection: $selectedColor)
-                                .padding()
-                        }
-                        HStack{
+                }
+                Section{
+                    HStack{
+                        
+                        Text("Color")
+                            .padding(.leading)
+                        Circle()
+                            .fill()
+                            .foregroundColor(selectedColor)
+                            .frame(width: 50, height: 50)
+                        
+                        ColorPicker("Change Goal Color", selection: $selectedColor)
+                            .padding()
+                    }
+                    HStack{
                         Text("Badge")
                             .padding(.leading)
                         TextField(
                             "\(badge)",text: $badge)
                             .font(.system(size: 50))
-//                            .padding()
+                        //                            .padding()
                             .multilineTextAlignment(.trailing)
-                            
-                        }
-                    }
-                    
-                    //                    TODO: Restyling picker ??
-                    DatePicker("Due Date for your goal", selection: $dueDate, displayedComponents: .date)
-                        .datePickerStyle(CompactDatePickerStyle())
                         
-                    
-                        .padding()
-                    
-                    
+                    }
+                }
+                
+                //                    TODO: Restyling picker ??
+                DatePicker("Due Date for your goal", selection: $dueDate, displayedComponents: .date)
+                    .datePickerStyle(CompactDatePickerStyle())
+                
+                
+                    .padding()
+                
+                
                 HStack{
                     Text("Hour Amount Goal:")
                         .padding(.leading)
@@ -83,7 +82,6 @@ struct ModalViewEdit : View{
                 Section{
                     
                 }
-//                }
                 .padding()
             }
             .navigationBarTitle(Text("\(goalName)"), displayMode: .inline)

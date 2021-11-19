@@ -11,7 +11,7 @@ struct GoalCardBig : View{
         Color(hue: $0, saturation: 0.5, brightness: 1)
     }
     
-    //@Binding var isPressedForModal : Bool
+    @Binding var isPressedForModal : Bool
     
     var body: some View{
         ZStack(alignment: .topLeading){
@@ -31,8 +31,8 @@ struct GoalCardBig : View{
                     Spacer()
                     
                     Button{
-                        print("Button tapped!")
-                        //self.isPressedForModal = true
+                        print("L'ho premuto come un porco!")
+                        self.isPressedForModal = true
                     }
                     label :{
                         Image(systemName: "ellipsis.circle")
@@ -55,8 +55,9 @@ struct GoalCardBig : View{
 }
 
 
-struct GoalCardBig_Previews: PreviewProvider {
+/*struct GoalCardBig_Previews: PreviewProvider {
     static var previews: some View {
         GoalCardBig()
     }
 }
+*/
