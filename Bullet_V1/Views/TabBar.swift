@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct TabBar: View {
+    @AppStorage("showOnBoarding") var showOnBoarding = true
+
+    
     var body: some View {
         
         TabView() {
@@ -19,6 +22,9 @@ struct TabBar: View {
                 Text("Canvas")
             }.tag(3)
         }
+        .sheet(isPresented: $showOnBoarding, content: {
+            Onboarding(isPresented: $showOnBoarding)
+        })
     }
 }
 

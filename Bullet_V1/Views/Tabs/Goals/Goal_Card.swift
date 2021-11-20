@@ -1,12 +1,9 @@
-//TODO: Trovare ed aggiungere l'elemento del progresso, una volta aggiunto la spaziatura degli elementi dovrebbe essere ok
-//TODO: Aggiungere tutte le variabili che dobbiamo passare al goalcard: colore, progresso, altre var per il progresso e titolo
-
 
 import Foundation
 import SwiftUI
 
 struct GoalCard : View{
-    @ObservedObject var goal : Goal_Class
+    @ObservedObject var goal : GoalClass
 
     var radius : CGFloat = 20
    
@@ -19,9 +16,10 @@ struct GoalCard : View{
 //            }
 
                 VStack(alignment: .center){
-                    
-                    CircularProgressBar(progress: $goal.percentageGoal , color: $goal.colorGoal )
+                    CircularProgressBar(progressGoal: goal)
                         .padding([.top, .bottom, .trailing])
+//                    CircularProgressBar(progress: goal.percentageGoal , color: goal.colorGoal )
+//                        .padding([.top, .bottom, .trailing])
                     VStack(alignment: .center){
                         Text("\(goal.nameGoal)")
                         .font(.system(size: 17.0))

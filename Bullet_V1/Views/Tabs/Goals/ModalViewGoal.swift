@@ -8,15 +8,13 @@
 import Foundation
 import SwiftUI
 
-struct Modal_View_Goal_Element : View{
-    //    TODO: prendere le info dell oggetto senza ridichiararlo EnvironmentObject ??
+struct ModalViewGoalElement : View{
 
-    //Collego le variabili ma vanno sostituite con il backend
-    @ObservedObject var studyGoal1 = Study_Class(nameGoal: "Math Exam", colorGoal: .blue, badgeGoal: "🎓", percentageGoal: 0.30, dueDate: "17-12-2021", hourAmount: 30.0, studiedHours: 9.0)
-    
+ 
     //TODO: NON HO CAPITO LO STEPPER
     @State var hour_value : Int = 20
     @Binding var isPressedForModal : Bool
+    @ObservedObject var modalGoal : StudyClass
     
     @State var edit : Bool = false
     
@@ -29,7 +27,7 @@ struct Modal_View_Goal_Element : View{
                             Text("Color")
                             Circle()
                                 .fill()
-                                .foregroundColor(studyGoal1.colorGoal)
+                                .foregroundColor(modalGoal.colorGoal)
                                 .frame(width: 50, height: 50)
                             
                         }
@@ -49,19 +47,21 @@ struct Modal_View_Goal_Element : View{
                         HStack{
                             Text("Due Date:")
                             Spacer()
-                            Text("\(studyGoal1.dueDate)")
+                            Text("\(modalGoal.dueDate)")
                         }
                         .padding()
                         HStack{
                             Text("Hour Amount:") // altra variabile
                             Spacer() // lo scrivo ma in realtà già la sappiamo
-                            Text("\(Int(studyGoal1.hourAmount))") // qua va la variabile
+                            Text("\(Int(modalGoal.hourAmount))") // qua va la variabile
                                 .padding()
                         }
                         .padding(.leading)
                         VStack{
-                            CircularProgressBar(progress: $studyGoal1.percentageGoal, color: $studyGoal1.colorGoal)
+                            CircularProgressBar(progressGoal: modalGoal)
                                 .frame(width: 200, height: 200)
+//                            CircularProgressBar(progress: modalGoal.percentageGoal, color: modalGoal.colorGoal)
+//                                .frame(width: 200, height: 200)
                             
                         }
                         .padding()
@@ -80,7 +80,7 @@ struct Modal_View_Goal_Element : View{
                     Spacer()
                 }
                 
-                .navigationBarTitle(Text("NameGoal"), displayMode: .inline)
+                .navigationBarTitle(Text("\(modalGoal.nameGoal)"), displayMode: .inline)
                 .navigationBarItems(
                     leading: Button{
                         self.isPressedForModal = false
@@ -94,19 +94,20 @@ struct Modal_View_Goal_Element : View{
                 .foregroundColor(.green)
             }
         } else{
-            ModalViewEdit(edit: $edit)
+            ModalViewEdit(edit: $edit, modalGoalEdit: modalGoal)
         }
     }
 }
 
-public struct OnBoardingModalGoal : View{
+public struct ModalGoal : View{
     
     @Binding var isPressedForModal : Bool
+    @ObservedObject var modalGoal : StudyClass
     
     
     public var body: some View{
         VStack{
-            Modal_View_Goal_Element(isPressedForModal: $isPressedForModal)
+            ModalViewGoalElement(isPressedForModal: $isPressedForModal, modalGoal: modalGoal)
         }
     }
 }

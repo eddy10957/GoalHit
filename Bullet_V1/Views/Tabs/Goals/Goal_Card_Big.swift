@@ -2,9 +2,8 @@ import Foundation
 import SwiftUI
 
 struct GoalCardBig : View{
-    
-    @ObservedObject var studyGoal1 = Study_Class(nameGoal: "Math Exam", colorGoal: .blue, badgeGoal: "🎓", percentageGoal: 0.30, dueDate: "17-12-2021", hourAmount: 30.0, studiedHours: 9.0)
-    
+//    dovrebbe essere Goals class ma evidentemente non ho capito l inheritance in Swift mannaggina
+    @ObservedObject var goalBig : StudyClass
 
     var radius : CGFloat = 20
     let hueColors = stride (from: 0, to: 1, by: 0.2).map{
@@ -23,7 +22,7 @@ struct GoalCardBig : View{
             VStack{
                 HStack{
                     
-                    Text("\(studyGoal1.nameGoal)")
+                    Text("\(goalBig.nameGoal)")
                         .font(.largeTitle)
                         .padding()
                         .foregroundColor(.white)
@@ -43,10 +42,12 @@ struct GoalCardBig : View{
                     
                     
                 }
-                CircularProgressBar(progress: $studyGoal1.percentageGoal, color: $studyGoal1.colorGoal)
+                CircularProgressBar(progressGoal: goalBig)
                     .frame(width: 200, height: 180)
+//                CircularProgressBar(progress: goalBig.percentageGoal, color: goalBig.colorGoal)
+//                    .frame(width: 200, height: 180)
 //                 Spacer()
-                Text("\(Int(studyGoal1.hourAmount - studyGoal1.studiedHours)) hours left")
+                Text("\(Int(goalBig.hourAmount - goalBig.studiedHours)) hours left")
                     .foregroundColor(.white)
             }
         }

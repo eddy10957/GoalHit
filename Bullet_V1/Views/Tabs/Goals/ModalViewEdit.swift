@@ -3,22 +3,16 @@
 //  Bullet_V1
 //
 
-//
-
-//Uso color picker perché è nativo e più semplice da utilizzare
 
 import Foundation
 import SwiftUI
 
 struct ModalViewEdit : View{
-    //    Diventa momentaneamente una string per poterla inserire nel text field velocemente poi faremo il casting in classe e amen
+
     @Binding var edit : Bool
-    @State var hourAmount : String = "30"
-    //Collego le variabili ma vanno sostituite con il backend
-    @State var selectedColor: Color = .blue
-    @State var badge : String = "🎓"
+    @ObservedObject var modalGoalEdit : StudyClass
     @State var dueDate = Date()
-    @State var goalName: String = "Math Exam"
+
     
     var body: some View{
         NavigationView{
@@ -30,7 +24,7 @@ struct ModalViewEdit : View{
                             .padding(.leading)
                         
                         
-                        TextField("\(goalName)",text: $goalName)
+                        TextField("\(modalGoalEdit.nameGoal)",text: $modalGoalEdit.nameGoal)
                             .font(.system(size: 20))
                             .foregroundColor(.black)
                             .multilineTextAlignment(.trailing)
@@ -43,24 +37,23 @@ struct ModalViewEdit : View{
                             .padding(.leading)
                         Circle()
                             .fill()
-                            .foregroundColor(selectedColor)
+                            .foregroundColor(modalGoalEdit.colorGoal)
                             .frame(width: 50, height: 50)
                         
-                        ColorPicker("Change Goal Color", selection: $selectedColor)
+                        ColorPicker("Change Goal Color", selection: $modalGoalEdit.colorGoal)
                             .padding()
                     }
                     HStack{
                         Text("Badge")
                             .padding(.leading)
                         TextField(
-                            "\(badge)",text: $badge)
+                            "\(modalGoalEdit.badgeGoal)",text: $modalGoalEdit.badgeGoal)
                             .font(.system(size: 50))
                             .multilineTextAlignment(.trailing)
                         
                     }
                 }
-                
-                //                    TODO: Restyling picker ??
+//                TODO: far funzionare il passaggio di date
                 DatePicker("Due Date for your goal", selection: $dueDate, displayedComponents: .date)
                     .datePickerStyle(CompactDatePickerStyle())
                 
@@ -72,15 +65,16 @@ struct ModalViewEdit : View{
                     Text("Hour Amount Goal:")
                         .padding(.leading)
                     
-                    TextField("\(hourAmount)",text: $hourAmount)
+                    TextField("\(modalGoalEdit.hourAmount)", value: $modalGoalEdit.hourAmount, formatter: NumberFormatter())
                     //                            .font(.system(size: 20))
                         .foregroundColor(.black)
                         .multilineTextAlignment(.trailing)
+                        .keyboardType(.numberPad)
                 }
                 
                 .padding()
             }
-            .navigationBarTitle(Text("\(goalName)"), displayMode: .inline)
+            .navigationBarTitle(Text("\(modalGoalEdit.nameGoal)"), displayMode: .inline)
             .navigationBarItems(
                 leading:
                     Button{

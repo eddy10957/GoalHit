@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-class Study_Class : Goal_Class{
+class StudyClass : GoalClass{
     var dueDate : String = ""
     var hourAmount : Double = 0.0
     var studiedHours : Double = 0.0

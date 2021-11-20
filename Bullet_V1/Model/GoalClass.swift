@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-class Goal_Class : ObservableObject{
+class GoalClass : ObservableObject{
     
     var nameGoal : String = ""
     var colorGoal : Color = .white

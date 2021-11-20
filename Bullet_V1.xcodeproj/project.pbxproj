@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A3538D627455FB300DC61A2 /* Goals_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3538D527455FB300DC61A2 /* Goals_View.swift */; };
+		6A3538D627455FB300DC61A2 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3538D527455FB300DC61A2 /* Goals.swift */; };
 		6A3538D82745673000DC61A2 /* Goal_Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3538D72745673000DC61A2 /* Goal_Card.swift */; };
-		6A9BC58227469CBB008FE217 /* Modal_View_Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9BC58127469CBB008FE217 /* Modal_View_Goal.swift */; };
+		6A9BC58227469CBB008FE217 /* ModalViewGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9BC58127469CBB008FE217 /* ModalViewGoal.swift */; };
 		6AA235B527440CD800E931CF /* Bullet_V1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235B427440CD800E931CF /* Bullet_V1App.swift */; };
-		6AA235B727440CD800E931CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235B627440CD800E931CF /* ContentView.swift */; };
 		6AA235B927440CD800E931CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA235B827440CD800E931CF /* Assets.xcassets */; };
 		6AA235BC27440CD800E931CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA235BB27440CD800E931CF /* Preview Assets.xcassets */; };
 		6AA235C627440CD900E931CF /* Bullet_V1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235C527440CD900E931CF /* Bullet_V1Tests.swift */; };
 		6AA235D027440CD900E931CF /* Bullet_V1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235CF27440CD900E931CF /* Bullet_V1UITests.swift */; };
 		6AA235D227440CD900E931CF /* Bullet_V1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235D127440CD900E931CF /* Bullet_V1UITestsLaunchTests.swift */; };
 		6AA235DF27440D2600E931CF /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235DE27440D2600E931CF /* Canvas.swift */; };
-		6AA235E127440D7300E931CF /* Goal_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E027440D7300E931CF /* Goal_Class.swift */; };
+		6AA235E127440D7300E931CF /* GoalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E027440D7300E931CF /* GoalClass.swift */; };
 		6AA235E327440D9A00E931CF /* Goal_Card_Big.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E227440D9A00E931CF /* Goal_Card_Big.swift */; };
 		6AA235E527440DAF00E931CF /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E427440DAF00E931CF /* OnBoarding.swift */; };
 		6AA235E727440DD500E931CF /* Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E627440DD500E931CF /* Rewards.swift */; };
 		6AA235E927440DE300E931CF /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E827440DE300E931CF /* TabBar.swift */; };
-		6AB9811F2744165900C1ECF2 /* Study_Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9811E2744165900C1ECF2 /* Study_Class.swift */; };
+		6AB9811F2744165900C1ECF2 /* StudyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9811E2744165900C1ECF2 /* StudyClass.swift */; };
+		AA46520B2748FB2B00AABF25 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA46520A2748FB2B00AABF25 /* Data.swift */; };
 		AA5491C62747902900EC099C /* ModalViewEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5491C52747902800EC099C /* ModalViewEdit.swift */; };
 		AA8FC30D27468293005A0A09 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FC30C27468293005A0A09 /* CircularProgressBar.swift */; };
 		AAD2F065274654CE00E60D8C /* RewardsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2F064274654CE00E60D8C /* RewardsRow.swift */; };
@@ -47,12 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6A3538D527455FB300DC61A2 /* Goals_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals_View.swift; sourceTree = "<group>"; };
+		6A3538D527455FB300DC61A2 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		6A3538D72745673000DC61A2 /* Goal_Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal_Card.swift; sourceTree = "<group>"; };
-		6A9BC58127469CBB008FE217 /* Modal_View_Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal_View_Goal.swift; sourceTree = "<group>"; };
+		6A9BC58127469CBB008FE217 /* ModalViewGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewGoal.swift; sourceTree = "<group>"; };
 		6AA235B127440CD800E931CF /* Bullet_V1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullet_V1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA235B427440CD800E931CF /* Bullet_V1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet_V1App.swift; sourceTree = "<group>"; };
-		6AA235B627440CD800E931CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6AA235B827440CD800E931CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AA235BB27440CD800E931CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6AA235C127440CD900E931CF /* Bullet_V1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bullet_V1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,12 +60,13 @@
 		6AA235CF27440CD900E931CF /* Bullet_V1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet_V1UITests.swift; sourceTree = "<group>"; };
 		6AA235D127440CD900E931CF /* Bullet_V1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet_V1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6AA235DE27440D2600E931CF /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
-		6AA235E027440D7300E931CF /* Goal_Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal_Class.swift; sourceTree = "<group>"; };
+		6AA235E027440D7300E931CF /* GoalClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalClass.swift; sourceTree = "<group>"; };
 		6AA235E227440D9A00E931CF /* Goal_Card_Big.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal_Card_Big.swift; sourceTree = "<group>"; };
 		6AA235E427440DAF00E931CF /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 		6AA235E627440DD500E931CF /* Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewards.swift; sourceTree = "<group>"; };
 		6AA235E827440DE300E931CF /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		6AB9811E2744165900C1ECF2 /* Study_Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_Class.swift; sourceTree = "<group>"; };
+		6AB9811E2744165900C1ECF2 /* StudyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyClass.swift; sourceTree = "<group>"; };
+		AA46520A2748FB2B00AABF25 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		AA5491C52747902800EC099C /* ModalViewEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewEdit.swift; sourceTree = "<group>"; };
 		AA8FC30C27468293005A0A09 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		AAD2F064274654CE00E60D8C /* RewardsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsRow.swift; sourceTree = "<group>"; };
@@ -157,8 +157,9 @@
 		AA2C01BB2745663B00EBE010 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6AA235E027440D7300E931CF /* Goal_Class.swift */,
-				6AB9811E2744165900C1ECF2 /* Study_Class.swift */,
+				6AA235E027440D7300E931CF /* GoalClass.swift */,
+				6AB9811E2744165900C1ECF2 /* StudyClass.swift */,
+				AA46520A2748FB2B00AABF25 /* Data.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,28 +167,51 @@
 		AA2C01BC2745665800EBE010 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AA4652062747CE9C00AABF25 /* Main Views */,
-				6AA235E227440D9A00E931CF /* Goal_Card_Big.swift */,
-				6AA235B627440CD800E931CF /* ContentView.swift */,
+				6AA235E827440DE300E931CF /* TabBar.swift */,
 				6AA235E427440DAF00E931CF /* OnBoarding.swift */,
-				6A3538D72745673000DC61A2 /* Goal_Card.swift */,
-				AAD2F064274654CE00E60D8C /* RewardsRow.swift */,
-				AA8FC30C27468293005A0A09 /* CircularProgressBar.swift */,
-				6A9BC58127469CBB008FE217 /* Modal_View_Goal.swift */,
-				AA5491C52747902800EC099C /* ModalViewEdit.swift */,
+				AA4652062747CE9C00AABF25 /* Tabs */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		AA4652062747CE9C00AABF25 /* Main Views */ = {
+		AA4652062747CE9C00AABF25 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				6AA235E827440DE300E931CF /* TabBar.swift */,
-				6A3538D527455FB300DC61A2 /* Goals_View.swift */,
+				AA4652092748F6B900AABF25 /* Canvas */,
+				AA4652082748F6AB00AABF25 /* Rewards */,
+				AA4652072748F6A000AABF25 /* Goals */,
+				6A3538D527455FB300DC61A2 /* Goals.swift */,
 				6AA235E627440DD500E931CF /* Rewards.swift */,
 				6AA235DE27440D2600E931CF /* Canvas.swift */,
 			);
-			path = "Main Views";
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		AA4652072748F6A000AABF25 /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				6AA235E227440D9A00E931CF /* Goal_Card_Big.swift */,
+				6A3538D72745673000DC61A2 /* Goal_Card.swift */,
+				AA8FC30C27468293005A0A09 /* CircularProgressBar.swift */,
+				6A9BC58127469CBB008FE217 /* ModalViewGoal.swift */,
+				AA5491C52747902800EC099C /* ModalViewEdit.swift */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		AA4652082748F6AB00AABF25 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				AAD2F064274654CE00E60D8C /* RewardsRow.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		AA4652092748F6B900AABF25 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Canvas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,12 +344,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AB9811F2744165900C1ECF2 /* Study_Class.swift in Sources */,
-				6AA235B727440CD800E931CF /* ContentView.swift in Sources */,
+				6AB9811F2744165900C1ECF2 /* StudyClass.swift in Sources */,
+				AA46520B2748FB2B00AABF25 /* Data.swift in Sources */,
 				AA8FC30D27468293005A0A09 /* CircularProgressBar.swift in Sources */,
-				6A3538D627455FB300DC61A2 /* Goals_View.swift in Sources */,
+				6A3538D627455FB300DC61A2 /* Goals.swift in Sources */,
 				6AA235B527440CD800E931CF /* Bullet_V1App.swift in Sources */,
-				6A9BC58227469CBB008FE217 /* Modal_View_Goal.swift in Sources */,
+				6A9BC58227469CBB008FE217 /* ModalViewGoal.swift in Sources */,
 				6AA235DF27440D2600E931CF /* Canvas.swift in Sources */,
 				6A3538D82745673000DC61A2 /* Goal_Card.swift in Sources */,
 				6AA235E927440DE300E931CF /* TabBar.swift in Sources */,
@@ -333,7 +357,7 @@
 				6AA235E327440D9A00E931CF /* Goal_Card_Big.swift in Sources */,
 				AA5491C62747902900EC099C /* ModalViewEdit.swift in Sources */,
 				6AA235E527440DAF00E931CF /* OnBoarding.swift in Sources */,
-				6AA235E127440D7300E931CF /* Goal_Class.swift in Sources */,
+				6AA235E127440D7300E931CF /* GoalClass.swift in Sources */,
 				6AA235E727440DD500E931CF /* Rewards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

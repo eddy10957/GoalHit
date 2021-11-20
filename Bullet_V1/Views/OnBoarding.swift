@@ -56,7 +56,7 @@ struct Onboarding: View {
             .frame(width: 350, height: 530, alignment: .center)
             .padding(.bottom)
             
-            Button(action: {isPresented = true}, label: {
+            Button(action: {isPresented.toggle()}, label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 8)
                         .frame(width: 300, height: 50)
