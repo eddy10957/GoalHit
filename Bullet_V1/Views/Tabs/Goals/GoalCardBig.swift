@@ -30,7 +30,6 @@ struct GoalCardBig : View{
                     Spacer()
                     
                     Button{
-                        print("L'ho premuto come un porco!")
                         self.isPressedForModal = true
                     }
                     label :{
@@ -44,9 +43,6 @@ struct GoalCardBig : View{
                 }
                 CircularProgressBar(progressGoal: goalBig)
                     .frame(width: 200, height: 180)
-//                CircularProgressBar(progress: goalBig.percentageGoal, color: goalBig.colorGoal)
-//                    .frame(width: 200, height: 180)
-//                 Spacer()
                 Text("\(Int(goalBig.hourAmount - goalBig.studiedHours)) hours left")
                     .foregroundColor(.white)
             }

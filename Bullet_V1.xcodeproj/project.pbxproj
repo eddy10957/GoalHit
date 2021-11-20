@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A3538D627455FB300DC61A2 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3538D527455FB300DC61A2 /* Goals.swift */; };
-		6A3538D82745673000DC61A2 /* Goal_Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3538D72745673000DC61A2 /* Goal_Card.swift */; };
+		6A3538D82745673000DC61A2 /* GoalCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3538D72745673000DC61A2 /* GoalCard.swift */; };
 		6A9BC58227469CBB008FE217 /* ModalViewGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9BC58127469CBB008FE217 /* ModalViewGoal.swift */; };
 		6AA235B527440CD800E931CF /* Bullet_V1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235B427440CD800E931CF /* Bullet_V1App.swift */; };
 		6AA235B927440CD800E931CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA235B827440CD800E931CF /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 		6AA235D227440CD900E931CF /* Bullet_V1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235D127440CD900E931CF /* Bullet_V1UITestsLaunchTests.swift */; };
 		6AA235DF27440D2600E931CF /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235DE27440D2600E931CF /* Canvas.swift */; };
 		6AA235E127440D7300E931CF /* GoalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E027440D7300E931CF /* GoalClass.swift */; };
-		6AA235E327440D9A00E931CF /* Goal_Card_Big.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E227440D9A00E931CF /* Goal_Card_Big.swift */; };
+		6AA235E327440D9A00E931CF /* GoalCardBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E227440D9A00E931CF /* GoalCardBig.swift */; };
 		6AA235E527440DAF00E931CF /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E427440DAF00E931CF /* OnBoarding.swift */; };
 		6AA235E727440DD500E931CF /* Rewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E627440DD500E931CF /* Rewards.swift */; };
 		6AA235E927440DE300E931CF /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA235E827440DE300E931CF /* TabBar.swift */; };
@@ -48,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		6A3538D527455FB300DC61A2 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
-		6A3538D72745673000DC61A2 /* Goal_Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal_Card.swift; sourceTree = "<group>"; };
+		6A3538D72745673000DC61A2 /* GoalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCard.swift; sourceTree = "<group>"; };
 		6A9BC58127469CBB008FE217 /* ModalViewGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewGoal.swift; sourceTree = "<group>"; };
 		6AA235B127440CD800E931CF /* Bullet_V1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullet_V1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA235B427440CD800E931CF /* Bullet_V1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet_V1App.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		6AA235D127440CD900E931CF /* Bullet_V1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet_V1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6AA235DE27440D2600E931CF /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		6AA235E027440D7300E931CF /* GoalClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalClass.swift; sourceTree = "<group>"; };
-		6AA235E227440D9A00E931CF /* Goal_Card_Big.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal_Card_Big.swift; sourceTree = "<group>"; };
+		6AA235E227440D9A00E931CF /* GoalCardBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCardBig.swift; sourceTree = "<group>"; };
 		6AA235E427440DAF00E931CF /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 		6AA235E627440DD500E931CF /* Rewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewards.swift; sourceTree = "<group>"; };
 		6AA235E827440DE300E931CF /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -190,8 +190,8 @@
 		AA4652072748F6A000AABF25 /* Goals */ = {
 			isa = PBXGroup;
 			children = (
-				6AA235E227440D9A00E931CF /* Goal_Card_Big.swift */,
-				6A3538D72745673000DC61A2 /* Goal_Card.swift */,
+				6AA235E227440D9A00E931CF /* GoalCardBig.swift */,
+				6A3538D72745673000DC61A2 /* GoalCard.swift */,
 				AA8FC30C27468293005A0A09 /* CircularProgressBar.swift */,
 				6A9BC58127469CBB008FE217 /* ModalViewGoal.swift */,
 				AA5491C52747902800EC099C /* ModalViewEdit.swift */,
@@ -351,10 +351,10 @@
 				6AA235B527440CD800E931CF /* Bullet_V1App.swift in Sources */,
 				6A9BC58227469CBB008FE217 /* ModalViewGoal.swift in Sources */,
 				6AA235DF27440D2600E931CF /* Canvas.swift in Sources */,
-				6A3538D82745673000DC61A2 /* Goal_Card.swift in Sources */,
+				6A3538D82745673000DC61A2 /* GoalCard.swift in Sources */,
 				6AA235E927440DE300E931CF /* TabBar.swift in Sources */,
 				AAD2F065274654CE00E60D8C /* RewardsRow.swift in Sources */,
-				6AA235E327440D9A00E931CF /* Goal_Card_Big.swift in Sources */,
+				6AA235E327440D9A00E931CF /* GoalCardBig.swift in Sources */,
 				AA5491C62747902900EC099C /* ModalViewEdit.swift in Sources */,
 				6AA235E527440DAF00E931CF /* OnBoarding.swift in Sources */,
 				6AA235E127440D7300E931CF /* GoalClass.swift in Sources */,

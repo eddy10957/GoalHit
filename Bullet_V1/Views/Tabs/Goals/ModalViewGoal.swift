@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 
 struct ModalViewGoalElement : View{
-
- 
+    
+    
     //TODO: NON HO CAPITO LO STEPPER
     @State var hour_value : Int = 20
     @Binding var isPressedForModal : Bool
@@ -60,17 +60,29 @@ struct ModalViewGoalElement : View{
                         VStack{
                             CircularProgressBar(progressGoal: modalGoal)
                                 .frame(width: 200, height: 200)
-//                            CircularProgressBar(progress: modalGoal.percentageGoal, color: modalGoal.colorGoal)
-//                                .frame(width: 200, height: 200)
+                            //                            CircularProgressBar(progress: modalGoal.percentageGoal, color: modalGoal.colorGoal)
+                            //                                .frame(width: 200, height: 200)
                             
                         }
                         .padding()
                         VStack {
-                            Text("Add Hours")
+//                            Text("Add Hours")
                             HStack {
                                 Spacer()
-                                Stepper("", value: $hour_value, in: 0...hour_value, step: 1)
+                                Stepper("Add Hours", value: $modalGoal.studiedHours, in: 0 ... modalGoal.hourAmount)
                                     .frame(width: 100, height: 100)
+                                
+//                                TODO: LO STEPPER MI PRENDE IN GIRO
+//                                Stepper("Add Hours", onIncrement: {
+//                                    modalGoal.studiedHours += 1
+//                                    print(modalGoal.studiedHours)
+//                                    print(modalGoal.hourAmount)
+//                                }, onDecrement: {
+//                                    modalGoal.studiedHours -= 1
+//                                    print(modalGoal.studiedHours)
+//                                    print(modalGoal.hourAmount)
+//                                })
+                                    
                                 Spacer()
                             }
                             .padding(.top, -30.0)
@@ -115,7 +127,7 @@ public struct ModalGoal : View{
 
 
 /*struct Modal_View_Goal_Element_Previews: PreviewProvider {
-    static var previews: some View {
-        Modal_View_Goal_Element()
-    }
-}*/
+ static var previews: some View {
+ Modal_View_Goal_Element()
+ }
+ }*/

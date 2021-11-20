@@ -2,11 +2,6 @@ import SwiftUI
 
 struct CircularProgressBar: View {
     
-//    @Binding var progress: Float
-//    @Binding var color : Color
-    
-//    @State var progress: Float
-//    @State var color : Color
     @ObservedObject var progressGoal : GoalClass
     
     var body: some View {
@@ -21,7 +16,7 @@ struct CircularProgressBar: View {
                 .stroke(style: StrokeStyle(lineWidth: 15.0, lineCap: .round, lineJoin: .round))
                 .foregroundColor(progressGoal.colorGoal)
                 .rotationEffect(Angle(degrees: 270.0))
-                .animation(.linear)
+
             Text(String(format: "%.0f %%", min(progressGoal.percentageGoal, 1.0)*100.0))
                 .font(.system(size: 48))
                 .bold()

@@ -6,14 +6,16 @@ class GoalClass : ObservableObject{
     var nameGoal : String = ""
     var colorGoal : Color = .white
     var badgeGoal : String = ""
-    var percentageGoal : Float = 0.0
+    var percentageGoal : Float!
     var isCompleted : Bool = false
     
-    init(nameGoal: String, colorGoal: Color, badgeGoal: String, percentageGoal: Float){
+    init(nameGoal: String, colorGoal: Color, badgeGoal: String){
         self.nameGoal = nameGoal
         self.colorGoal = colorGoal
         self.badgeGoal = badgeGoal
-        self.percentageGoal = percentageGoal
+        self.percentageGoal = progressTracking()
     }
-    public func progress_tracking(){}
+    public func progressTracking() -> Float {
+        return 0.0
+    }
 }
