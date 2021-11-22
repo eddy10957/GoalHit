@@ -21,9 +21,9 @@ struct Canvas: View {
         NavigationView {
             ScrollView {
                 VStack{
-                    ForEach(imageCardView){ value in
-                        CanvasCard(imageCard: $value, nameCard: $value)
-                    }
+//                    ForEach(imageCardView){ value in
+//                        CanvasCard(imageCard: $value, nameCard: $value)
+//                    }
                 }
             }
         }
