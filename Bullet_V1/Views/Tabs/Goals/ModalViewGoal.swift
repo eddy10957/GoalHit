@@ -35,7 +35,7 @@ struct ModalViewGoalElement : View{
                         
                         VStack{
                             Text("Badge")
-                            Text("🎓")
+                            Text("\(modalGoal.badgeGoal)")
                                 .font(.system(size: 50))
                         }
                         .padding()
