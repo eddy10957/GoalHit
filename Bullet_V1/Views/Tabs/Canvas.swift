@@ -14,7 +14,7 @@ struct Canvas: View {
     
     //    var nameCardView = ["Rule basic", "Green Template", "Daily planner", "Grid basic", "Pink template", "Blue template", "Weekly planner"]
     //
-    let imageCardView = ["rule_basic", "green_template", "daily_planner", "grid_basic", "pink_template", "blue_template", "weekly_planner"]
+    let imageCardView = ["Rule Basic", "Green Template", "Daily Planner", "Grid Basic", "Pink Template", "Blue Template", "Weekly Planner"]
     
     let columns = [GridItem(.adaptive(minimum: 130))]
     
