@@ -3,7 +3,7 @@ import SwiftUI
 
 class StudyClass : GoalClass{
     @Published var dueDate : String = ""
-    @Published var hourAmount : Double{
+    @Published var hourAmount : Double {
         didSet{
             percentageGoal = progressTracking()
         }
