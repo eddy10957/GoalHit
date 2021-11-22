@@ -18,6 +18,8 @@ struct Canvas: View {
     
     let columns = [GridItem(.adaptive(minimum: 130))]
     
+    @State var isClicked : Bool = false
+    
     var body: some View {
         
         NavigationView {
@@ -30,13 +32,20 @@ struct Canvas: View {
                 }.padding()
             }
             .navigationTitle("Canvas")
-            .navigationBarItems(leading: Button{} label: {
+            .navigationBarItems(leading: Button{
+            } label: {
                 Text("Edit")
-            }, trailing: Button{} label: {
+            }, trailing: Button{
+                self.isClicked = true
+            } label: {
                 Image(systemName: "plus")
             })
         }
         .foregroundColor(.green)
+//        .sheet(isClicked: $isClicked, content: {
+//            ModalEditCanvas(isClicked: $isClicked)
+//        })
+
     }
 }
 
