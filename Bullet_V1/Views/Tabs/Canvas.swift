@@ -14,16 +14,16 @@ struct Canvas: View {
     
     //    var nameCardView = ["Rule basic", "Green Template", "Daily planner", "Grid basic", "Pink template", "Blue template", "Weekly planner"]
     //
-    var imageCardView : [String] = ["rule_basic", "green_template", "daily_planner", "grid_basic", "pink_template", "blue_template", "weekly_planner"]
+    let imageCardView = ["rule_basic", "green_template", "daily_planner", "grid_basic", "pink_template", "blue_template", "weekly_planner"]
     
     var body: some View {
         
         NavigationView {
             ScrollView {
                 VStack{
-//                    ForEach(imageCardView){ value in
-//                        CanvasCard(imageCard: $value, nameCard: $value)
-//                    }
+                    ForEach(imageCardView, id: \.self){ value in
+                        CanvasCard(imageCard: value, nameCard: value)
+                    }
                 }
             }
         }

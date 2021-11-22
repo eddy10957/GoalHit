@@ -10,8 +10,8 @@ import SwiftUI
 
 struct CanvasCard: View {
     
-    @Binding var imageCard : String
-    @Binding var nameCard : String
+    var imageCard : String
+    var nameCard : String
     
     var body: some View {
         
