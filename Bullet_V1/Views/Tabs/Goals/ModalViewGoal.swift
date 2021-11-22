@@ -71,17 +71,6 @@ struct ModalViewGoalElement : View{
                                 Spacer()
                                 Stepper("Add Hours", value: $modalGoal.studiedHours, in: 0 ... modalGoal.hourAmount)
                                     .frame(width: 100, height: 100)
-                                
-//                                TODO: LO STEPPER MI PRENDE IN GIRO
-//                                Stepper("Add Hours", onIncrement: {
-//                                    modalGoal.studiedHours += 1
-//                                    print(modalGoal.studiedHours)
-//                                    print(modalGoal.hourAmount)
-//                                }, onDecrement: {
-//                                    modalGoal.studiedHours -= 1
-//                                    print(modalGoal.studiedHours)
-//                                    print(modalGoal.hourAmount)
-//                                })
                                     
                                 Spacer()
                             }
