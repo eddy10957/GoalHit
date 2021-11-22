@@ -3,11 +3,11 @@ import SwiftUI
 
 class GoalClass : ObservableObject{
     
-    var nameGoal : String = ""
-    var colorGoal : Color = .white
-    var badgeGoal : String = ""
-    var percentageGoal : Float!
-    var isCompleted : Bool = false
+    @Published var nameGoal : String = ""
+    @Published var colorGoal : Color = .white
+    @Published var badgeGoal : String = ""
+    @Published var percentageGoal : Float!
+    @Published var isCompleted : Bool = false
     
     init(nameGoal: String, colorGoal: Color, badgeGoal: String){
         self.nameGoal = nameGoal
