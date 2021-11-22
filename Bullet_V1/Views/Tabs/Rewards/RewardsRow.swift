@@ -75,7 +75,7 @@ struct RewardsRow: View {
                 
             }
             .padding(.horizontal, 3.0)
-            HStack(spacing: 60) {
+            HStack(spacing: 50) {
                 
                 Text("First Step")
                 

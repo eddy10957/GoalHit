@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ModalEditCanvas: View {
     
-    @Binding var isClicked : Bool
+    @Binding var isClickedForModal : Bool
     
     let imageCardView1 = ["Rule Basic", "Green Template", "Daily Planner"]
     
@@ -83,17 +83,32 @@ struct ModalEditCanvas: View {
                     
                 }
                 .padding()
+                .foregroundColor(.black)
                 
             } .padding()
                 .navigationTitle("Canvas")
                 .navigationBarItems(leading:
                                         Button{
-                    self.isClicked = false
+                    isClickedForModal.toggle()
+                    print(Text("premuto"))
                     
                 } label: {
                     Text("Cancel")
                     
                 })
+        }
+        .foregroundColor(.green)
+    }
+}
+
+public struct ModalEditCanvasUp : View{
+    
+    @Binding var isClickedForModal : Bool
+      
+    
+    public var body: some View{
+        VStack{
+            ModalEditCanvas(isClickedForModal: $isClickedForModal)
         }
     }
 }

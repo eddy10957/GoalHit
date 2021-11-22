@@ -10,15 +10,11 @@ import SwiftUI
 
 struct Canvas: View {
     
-    //var vectorCanvasCard = [CanvasCard(imageCard: "rule_basic", nameCard: "Rule basic"),CanvasCard(imageCard: "green_template", nameCard: "Green Template"), CanvasCard(imageCard: "daily_planner", nameCard: "Daily planner")]
-    
-    //    var nameCardView = ["Rule basic", "Green Template", "Daily planner", "Grid basic", "Pink template", "Blue template", "Weekly planner"]
-    //
     let imageCardView = ["Rule Basic", "Green Template", "Daily Planner", "Grid Basic", "Pink Template", "Blue Template", "Weekly Planner"]
     
     let columns = [GridItem(.adaptive(minimum: 130))]
     
-    @State var isClicked : Bool = false
+    @State var isClickedForModal : Bool = false
     
     var body: some View {
         
@@ -32,19 +28,22 @@ struct Canvas: View {
                 }.padding()
             }
             .navigationTitle("Canvas")
-            .navigationBarItems(leading: Button{
+            .navigationBarItems(leading:
+                                    Button{
+//                COSA FA EDIT?
             } label: {
                 Text("Edit")
-            }, trailing: Button{
-                self.isClicked = true
+            }, trailing:
+                                    Button{
+                isClickedForModal.toggle()
             } label: {
                 Image(systemName: "plus")
             })
         }
         .foregroundColor(.green)
-//        .sheet(isClicked: $isClicked, content: {
-//            ModalEditCanvas(isClicked: $isClicked)
-//        })
+        .sheet(isPresented: $isClickedForModal, content: {
+            ModalEditCanvas(isClickedForModal: $isClickedForModal)
+        })
 
     }
 }
