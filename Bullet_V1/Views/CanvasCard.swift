@@ -10,20 +10,18 @@ import SwiftUI
 
 struct CanvasCard: View {
     
-    @Binding var imageCard : Image
+    @Binding var imageCard : String
     @Binding var nameCard : String
     
     var body: some View {
         
             VStack {
                 ZStack(alignment: .center){
-                    
-                    imageCard
+                    Image(imageCard)
                     RoundedRectangle(cornerRadius: 12)
                         .strokeBorder(.gray)
                         .frame(width: 119, height: 127)
                 }
-                
                 Text(nameCard)
                     .font(.system(size: 12))
         }
