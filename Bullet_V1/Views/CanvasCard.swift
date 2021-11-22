@@ -23,7 +23,7 @@ struct CanvasCard: View {
                         .frame(width: 119, height: 127)
                 }
                 Text(nameCard)
-                    .font(.system(size: 12))
+                    .font(.system(size: 16))
         }
     }
 }
