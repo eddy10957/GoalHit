@@ -16,17 +16,27 @@ struct Canvas: View {
     //
     let imageCardView = ["rule_basic", "green_template", "daily_planner", "grid_basic", "pink_template", "blue_template", "weekly_planner"]
     
+    let columns = [GridItem(.adaptive(minimum: 130))]
+    
     var body: some View {
         
         NavigationView {
             ScrollView {
-                VStack{
+                LazyVGrid(columns: columns, spacing: 20){
                     ForEach(imageCardView, id: \.self){ value in
                         CanvasCard(imageCard: value, nameCard: value)
+                            .foregroundColor(.black)
                     }
-                }
+                }.padding()
             }
+            .navigationTitle("Canvas")
+            .navigationBarItems(leading: Button{} label: {
+                Text("Edit")
+            }, trailing: Button{} label: {
+                Image(systemName: "plus")
+            })
         }
+        .foregroundColor(.green)
     }
 }
 
