@@ -16,7 +16,7 @@ struct RewardsRow: View {
     
     var body: some View {
         VStack{
-            HStack{
+            HStack(spacing: 35){
                 
                 ZStack {
                     
@@ -35,7 +35,7 @@ struct RewardsRow: View {
                         .font(.system(size: 65))
                     
                 }
-                .frame(width: 125, height: 125)
+                .frame(width: 100, height: 100)
                 
                 ZStack {
                     
@@ -52,7 +52,7 @@ struct RewardsRow: View {
                     Text(badgeIcon)
                         .font(.system(size: 65))
                 }
-                .frame(width: 125, height: 125)
+                .frame(width: 100, height: 100)
                 
                 ZStack {
                     
@@ -69,7 +69,7 @@ struct RewardsRow: View {
                     Text(badgeIcon)
                         .font(.system(size: 65))
                 }
-                .frame(width: 125, height: 125)
+                .frame(width: 100, height: 100)
                 
                 
                 
@@ -85,7 +85,7 @@ struct RewardsRow: View {
                 
             }
         }
-        .frame(width: 410, height: 180)
+        .frame(width: 410, height: 100)
     }
 }
 

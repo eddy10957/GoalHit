@@ -12,7 +12,7 @@ struct Rewards: View {
         
         NavigationView{
             ScrollView{
-                VStack(spacing:30) {
+                VStack(spacing:75) {
                     
                     VStack {
                         
