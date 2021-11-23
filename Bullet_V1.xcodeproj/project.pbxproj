@@ -166,20 +166,12 @@
 			path = Bullet_V1UITests;
 			sourceTree = "<group>";
 		};
-		6AACB131274C2AE100ED93CC /* testCanvas */ = {
-			isa = PBXGroup;
-			children = (
-				6AACB132274C2AF000ED93CC /* Line.swift */,
-				6AACB134274C2B4C00ED93CC /* DrawingView.swift */,
-				6AACB136274C2E1400ED93CC /* DrawingEngine.swift */,
-				6AACB138274C2E2E00ED93CC /* DrawingShapes.swift */,
-			);
-			path = testCanvas;
-			sourceTree = "<group>";
-		};
 		AA2C01BB2745663B00EBE010 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6AACB132274C2AF000ED93CC /* Line.swift */,
+				6AACB136274C2E1400ED93CC /* DrawingEngine.swift */,
+				6AACB138274C2E2E00ED93CC /* DrawingShapes.swift */,
 				6AA235E027440D7300E931CF /* GoalClass.swift */,
 				6AB9811E2744165900C1ECF2 /* StudyClass.swift */,
 				AA46520A2748FB2B00AABF25 /* Data.swift */,
@@ -233,7 +225,7 @@
 		AA4652092748F6B900AABF25 /* Canvas */ = {
 			isa = PBXGroup;
 			children = (
-				6AACB131274C2AE100ED93CC /* testCanvas */,
+				6AACB134274C2B4C00ED93CC /* DrawingView.swift */,
 				6A6ED8DE274BDFCC0064520D /* CanvasCard.swift */,
 				6A1A04F0274C012F009CED99 /* ModalEditCanvas.swift */,
 			);
