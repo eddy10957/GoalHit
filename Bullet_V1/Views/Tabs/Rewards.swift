@@ -10,49 +10,52 @@ struct Rewards: View {
     var body: some View {
         
         
-        
-        VStack(spacing:30) {
-            
-            VStack {
-                
-                
-                HStack {
+        NavigationView{
+            ScrollView{
+                VStack(spacing:30) {
                     
-                    Text("Study")
-                        .font(.title)
-                        .fontWeight(.bold)
-                    Spacer()
+                    VStack {
+                        
+                        
+                        HStack {
+                            
+                            Text("Study")
+                                .font(.title)
+                                .fontWeight(.bold)
+                            Spacer()
+                        }
+                        .padding()
+                        RewardsRow(badgeIcon: "🎓")
+                        
+                        
+                        HStack {
+                            
+                            Text("Sport")
+                                .font(.title)
+                                .fontWeight(.bold)
+                            Spacer()
+                        }
+                        .padding()
+                        RewardsRow(badgeIcon: "🏀")
+                        
+                        
+                        
+                        HStack {
+                            
+                            Text("Training")
+                                .font(.title)
+                                .fontWeight(.bold)
+                            Spacer()
+                        }
+                        .padding()
+                        RewardsRow(badgeIcon: "🏋️")
+                        
+                    }
+                    .padding()
                 }
-                
-                RewardsRow(badgeIcon: "🎓")
-                
-                
-                HStack {
-                    
-                    Text("Sport")
-                        .font(.title)
-                        .fontWeight(.bold)
-                    Spacer()
-                }
-                
-                RewardsRow(badgeIcon: "🏀")
-                
-                
-                
-                HStack {
-                    
-                    Text("Training")
-                        .font(.title)
-                        .fontWeight(.bold)
-                    Spacer()
-                }
-                
-                RewardsRow(badgeIcon: "🏋️")
-                
+                .navigationTitle("Rewards")
             }
-            .padding(.horizontal, 5.0)
         }
-        
     }
 }
 

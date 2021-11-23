@@ -47,7 +47,7 @@ struct GoalCardBig : View{
                     .foregroundColor(.white)
             }
         }
-        .frame(width: 350 , height: 400)
+        .frame(width: 370 , height: 400)
     }
 }
 
