@@ -12,12 +12,23 @@ struct Goals: View {
                     VStack{
                         HStack{
                             GoalCard(goal: goals[1], isPressedForModal: $isPressedForModal)
+                                .onTapGesture {
+                                    isPressedForModal.toggle()
+                                }
                             GoalCard(goal: goals[2], isPressedForModal: $isPressedForModal)
+                                .onTapGesture {
+                                    isPressedForModal.toggle()
+                                }
                         }
                         HStack{
                             GoalCard(goal: goals[3], isPressedForModal: $isPressedForModal)
+                                .onTapGesture {
+                                    isPressedForModal.toggle()
+                                }
                             GoalCard(goal: goals[4], isPressedForModal: $isPressedForModal)
-                            
+                                .onTapGesture {
+                                    isPressedForModal.toggle()
+                                }
                         }
                     }
                 }

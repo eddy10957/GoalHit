@@ -23,7 +23,7 @@ struct TabBar: View {
             }
             .tag(3)
         }
-        //.accentColor(.green)
+        .accentColor(.green)
         .sheet(isPresented: $showOnBoarding, content: {
             Onboarding(isPresented: $showOnBoarding)
         })

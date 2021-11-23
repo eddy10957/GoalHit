@@ -10,34 +10,28 @@ struct GoalCard : View{
     @Binding var isPressedForModal : Bool
     
     var body: some View{
-        Button{
-            isPressedForModal.toggle()
-        } label: {
-            ZStack(){
-                //            ZStack{
-                RoundedRectangle(cornerRadius: radius)
-                    .strokeBorder(goal.colorGoal)
-                //            }
-                HStack{
+        ZStack(){
+            RoundedRectangle(cornerRadius: radius)
+                .strokeBorder(goal.colorGoal)
+            HStack{
+                VStack(alignment: .center){
+                    CircularProgressBar(progressGoal: goal)
+                        .padding([.top, .bottom, .trailing])
                     VStack(alignment: .center){
-                        CircularProgressBar(progressGoal: goal)
-                            .padding([.top, .bottom, .trailing])
-                        VStack(alignment: .center){
-                            Text("\(goal.nameGoal)")
-                                .font(.system(size: 17.0))
-                                .fontWeight(.bold)
-                                .padding(.trailing)
-                            Text("placeholder details")
-                                .font(.system(size: 15.0))
-                                .fontWeight(.light)
-                        }
-                        .padding(.bottom, 4.0)
+                        Text("\(goal.nameGoal)")
+                            .font(.system(size: 17.0))
+                            .fontWeight(.bold)
+                            .padding(.trailing)
+                        Text("placeholder details")
+                            .font(.system(size: 15.0))
+                            .fontWeight(.light)
                     }
-                    .padding(.leading, 14.0)
+                    .padding(.bottom, 4.0)
                 }
+                .padding(.leading, 14.0)
             }
-            .frame(width: 182, height: 227)
         }
+        .frame(width: 182, height: 227)
     }
 }
 
