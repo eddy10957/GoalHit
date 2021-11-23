@@ -33,7 +33,7 @@ struct ModalEditCanvas: View {
                         HStack{
                             ForEach(imageCardView1, id: \.self){ value in
                                 CanvasCard(imageCard: value, nameCard: value)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.primary)
                             }
                         }
                     }
@@ -47,7 +47,7 @@ struct ModalEditCanvas: View {
                         HStack{
                             ForEach(imageCardView2, id: \.self){ value in
                                 CanvasCard(imageCard: value, nameCard: value)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.primary)
                             }
                         }
                     }
@@ -61,7 +61,7 @@ struct ModalEditCanvas: View {
                         HStack{
                             ForEach(imageCardView3, id: \.self){ value in
                                 CanvasCard(imageCard: value, nameCard: value)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.primary)
                             }
                         }
                     }
@@ -75,7 +75,7 @@ struct ModalEditCanvas: View {
                         HStack{
                             ForEach(imageCardView4, id: \.self){ value in
                                 CanvasCard(imageCard: value, nameCard: value)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.primary)
                             }
                         }
                     }
@@ -83,7 +83,7 @@ struct ModalEditCanvas: View {
                     
                 }
                 .padding()
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
                 
             } .padding()
                 .navigationTitle("Canvas")

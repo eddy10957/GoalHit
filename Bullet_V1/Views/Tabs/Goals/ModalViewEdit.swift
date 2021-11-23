@@ -26,7 +26,7 @@ struct ModalViewEdit : View{
                         
                         TextField("\(modalGoalEdit.nameGoal)",text: $modalGoalEdit.nameGoal)
                             .font(.system(size: 20))
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                             .multilineTextAlignment(.trailing)
                     }
                 }
@@ -67,7 +67,7 @@ struct ModalViewEdit : View{
                     
                     TextField("\(modalGoalEdit.hourAmount)", value: $modalGoalEdit.hourAmount, formatter: NumberFormatter())
                     //                            .font(.system(size: 20))
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                         .multilineTextAlignment(.trailing)
                         .keyboardType(.numberPad)
                 }

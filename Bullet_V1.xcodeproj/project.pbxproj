@@ -132,7 +132,6 @@
 		6AA235B327440CD800E931CF /* Bullet_V1 */ = {
 			isa = PBXGroup;
 			children = (
-				6AACB131274C2AE100ED93CC /* testCanvas */,
 				AA2C01BC2745665800EBE010 /* Views */,
 				AA2C01BB2745663B00EBE010 /* Model */,
 				6AA235B427440CD800E931CF /* Bullet_V1App.swift */,
@@ -234,6 +233,7 @@
 		AA4652092748F6B900AABF25 /* Canvas */ = {
 			isa = PBXGroup;
 			children = (
+				6AACB131274C2AE100ED93CC /* testCanvas */,
 				6A6ED8DE274BDFCC0064520D /* CanvasCard.swift */,
 				6A1A04F0274C012F009CED99 /* ModalEditCanvas.swift */,
 			);
@@ -552,7 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bullet_V1/Preview Content\"";
-				DEVELOPMENT_TEAM = 275645VMJ8;
+				DEVELOPMENT_TEAM = 3DWPN6Q5Q9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -583,7 +583,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bullet_V1/Preview Content\"";
-				DEVELOPMENT_TEAM = 275645VMJ8;
+				DEVELOPMENT_TEAM = 3DWPN6Q5Q9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

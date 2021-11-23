@@ -41,7 +41,7 @@ struct ModalViewGoalElement : View{
                         .padding()
                         Spacer()
                     }
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
                     .padding()
                     VStack{
                         HStack{
@@ -77,7 +77,7 @@ struct ModalViewGoalElement : View{
                             .padding(.top, -30.0)
                         }
                     }
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
                     Spacer()
                 }
                 

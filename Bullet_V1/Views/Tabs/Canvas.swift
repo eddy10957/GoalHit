@@ -22,9 +22,19 @@ struct Canvas: View {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20){
                     ForEach(imageCardView, id: \.self){ value in
-                        CanvasCard(imageCard: value, nameCard: value)
-                            .foregroundColor(.black)
-                    }
+//                        Button{
+//                            DrawingView()
+//                        }label: {
+//                            CanvasCard(imageCard: value, nameCard: value)
+//                                .foregroundColor(.primary)
+//                        }
+//                    }
+                        
+                        NavigationLink(destination: DrawingView()){
+                            CanvasCard(imageCard: value, nameCard: value)
+                                .foregroundColor(.primary)
+                        }
+                        }
                 }.padding()
             }
             .navigationTitle("Canvas")
