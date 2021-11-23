@@ -11,12 +11,12 @@ struct Goals: View {
                     GoalCardBig(goalBig: goals[0], isPressedForModal: $isPressedForModal)
                     VStack{
                         HStack{
-                            GoalCard(goal: goals[1])
-                            GoalCard(goal: goals[2])
+                            GoalCard(goal: goals[1], isPressedForModal: $isPressedForModal)
+                            GoalCard(goal: goals[2], isPressedForModal: $isPressedForModal)
                         }
                         HStack{
-                            GoalCard(goal: goals[3])
-                            GoalCard(goal: goals[4])
+                            GoalCard(goal: goals[3], isPressedForModal: $isPressedForModal)
+                            GoalCard(goal: goals[4], isPressedForModal: $isPressedForModal)
                             
                         }
                     }
@@ -24,7 +24,6 @@ struct Goals: View {
             }
             .navigationTitle("Goals")
             .sheet(isPresented: $isPressedForModal, content: {ModalGoal(isPressedForModal: $isPressedForModal, modalGoal: goals[0])})
-            
         }
     }
 }

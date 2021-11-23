@@ -16,7 +16,7 @@ var goals : [StudyClass] = [
     
     StudyClass(nameGoal: "Metodi Matematici", colorGoal: .red, badgeGoal: "🎓",  dueDate: "20-12-2021", hourAmount: 100.0, studiedHours: 10.0),
     
-    StudyClass(nameGoal: "Human interface Guidelines", colorGoal: .yellow, badgeGoal: "🎓", dueDate: "20-12-2021", hourAmount: 100.0, studiedHours: 1.0)
+    StudyClass(nameGoal: "Follow HIG", colorGoal: .yellow, badgeGoal: "🎓", dueDate: "20-12-2021", hourAmount: 100.0, studiedHours: 1.0)
     ]
 //StudyClass(nameGoal: "Math Exam", colorGoal: .blue, badgeGoal: "🎓", percentageGoal: 0.30, dueDate: "17-12-2021", hourAmount: 30.0, studiedHours: 9.0),
 // StudyClass(nameGoal: "FCE Exam", colorGoal: .primary, badgeGoal: "🎓", percentageGoal: 0.22, dueDate: "20-12-2021", hourAmount: 100.0, studiedHours: 22.0),
