@@ -58,7 +58,7 @@
 		6A3538D72745673000DC61A2 /* GoalCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCard.swift; sourceTree = "<group>"; };
 		6A6ED8DE274BDFCC0064520D /* CanvasCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CanvasCard.swift; path = Bullet_V1/Views/CanvasCard.swift; sourceTree = SOURCE_ROOT; };
 		6A9BC58127469CBB008FE217 /* ModalViewGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewGoal.swift; sourceTree = "<group>"; };
-		6AA235B127440CD800E931CF /* Bullet_V1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullet_V1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AA235B127440CD800E931CF /* GoalHit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalHit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA235B427440CD800E931CF /* Bullet_V1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet_V1App.swift; sourceTree = "<group>"; };
 		6AA235B827440CD800E931CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AA235BB27440CD800E931CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		6AA235B227440CD800E931CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6AA235B127440CD800E931CF /* Bullet_V1.app */,
+				6AA235B127440CD800E931CF /* GoalHit.app */,
 				6AA235C127440CD900E931CF /* Bullet_V1Tests.xctest */,
 				6AA235CB27440CD900E931CF /* Bullet_V1UITests.xctest */,
 			);
@@ -235,9 +235,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6AA235B027440CD800E931CF /* Bullet_V1 */ = {
+		6AA235B027440CD800E931CF /* GoalHit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AA235D527440CD900E931CF /* Build configuration list for PBXNativeTarget "Bullet_V1" */;
+			buildConfigurationList = 6AA235D527440CD900E931CF /* Build configuration list for PBXNativeTarget "GoalHit" */;
 			buildPhases = (
 				6AA235AD27440CD800E931CF /* Sources */,
 				6AA235AE27440CD800E931CF /* Frameworks */,
@@ -247,9 +247,9 @@
 			);
 			dependencies = (
 			);
-			name = Bullet_V1;
+			name = GoalHit;
 			productName = Bullet_V1;
-			productReference = 6AA235B127440CD800E931CF /* Bullet_V1.app */;
+			productReference = 6AA235B127440CD800E931CF /* GoalHit.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6AA235C027440CD900E931CF /* Bullet_V1Tests */ = {
@@ -324,7 +324,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6AA235B027440CD800E931CF /* Bullet_V1 */,
+				6AA235B027440CD800E931CF /* GoalHit */,
 				6AA235C027440CD900E931CF /* Bullet_V1Tests */,
 				6AA235CA27440CD900E931CF /* Bullet_V1UITests */,
 			);
@@ -408,12 +408,12 @@
 /* Begin PBXTargetDependency section */
 		6AA235C327440CD900E931CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6AA235B027440CD800E931CF /* Bullet_V1 */;
+			target = 6AA235B027440CD800E931CF /* GoalHit */;
 			targetProxy = 6AA235C227440CD900E931CF /* PBXContainerItemProxy */;
 		};
 		6AA235CD27440CD900E931CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6AA235B027440CD800E931CF /* Bullet_V1 */;
+			target = 6AA235B027440CD800E931CF /* GoalHit */;
 			targetProxy = 6AA235CC27440CD900E931CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -701,7 +701,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AA235D527440CD900E931CF /* Build configuration list for PBXNativeTarget "Bullet_V1" */ = {
+		6AA235D527440CD900E931CF /* Build configuration list for PBXNativeTarget "GoalHit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6AA235D627440CD900E931CF /* Debug */,

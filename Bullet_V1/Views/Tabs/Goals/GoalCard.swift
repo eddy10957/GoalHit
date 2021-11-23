@@ -3,7 +3,8 @@ import Foundation
 import SwiftUI
 
 struct GoalCard : View{
-    @ObservedObject var goal : GoalClass
+    
+    @ObservedObject var goal : StudyClass
     
     
     var radius : CGFloat = 20
@@ -22,7 +23,10 @@ struct GoalCard : View{
                             .font(.system(size: 17.0))
                             .fontWeight(.bold)
                             .padding(.trailing)
-                        Text("placeholder details")
+                    }
+                    
+                    VStack(alignment: .center){
+                        Text("\(Int(goal.hourAmount - goal.studiedHours)) hours left")
                             .font(.system(size: 15.0))
                             .fontWeight(.light)
                     }
