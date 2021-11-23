@@ -14,6 +14,9 @@ struct GoalCard : View{
         ZStack(){
             RoundedRectangle(cornerRadius: radius)
                 .strokeBorder(goal.colorGoal)
+            RoundedRectangle(cornerRadius: radius)
+                .fill(goal.colorGoal)
+                .opacity(0.1)
             HStack{
                 VStack(alignment: .center){
                     CircularProgressBar(progressGoal: goal)

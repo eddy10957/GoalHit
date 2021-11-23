@@ -2,9 +2,9 @@ import Foundation
 import SwiftUI
 
 struct GoalCardBig : View{
-//    dovrebbe essere Goals class ma evidentemente non ho capito l inheritance in Swift mannaggina
+    //    dovrebbe essere Goals class ma evidentemente non ho capito l inheritance in Swift mannaggina
     @ObservedObject var goalBig : StudyClass
-
+    
     var radius : CGFloat = 20
     let hueColors = stride (from: 0, to: 1, by: 0.2).map{
         Color(hue: $0, saturation: 0.5, brightness: 1)
@@ -25,7 +25,7 @@ struct GoalCardBig : View{
                     Text("\(goalBig.nameGoal)")
                         .font(.largeTitle)
                         .padding()
-                        .foregroundColor(.white)
+                        .foregroundColor(.primary)
                     
                     Spacer()
                     
@@ -36,15 +36,16 @@ struct GoalCardBig : View{
                         Image(systemName: "ellipsis.circle")
                             .padding()
                             .font(.system(size: 40))
-                            .foregroundColor(.white)
+                            .foregroundColor(.primary)
                     }
-                    
+                    .padding()
                     
                 }
                 CircularProgressBar(progressGoal: goalBig)
                     .frame(width: 200, height: 180)
                 Text("\(Int(goalBig.hourAmount - goalBig.studiedHours)) hours left")
-                    .foregroundColor(.white)
+                    .foregroundColor(.primary)
+                    .padding()
             }
         }
         .frame(width: 370 , height: 400)
@@ -53,8 +54,8 @@ struct GoalCardBig : View{
 
 
 /*struct GoalCardBig_Previews: PreviewProvider {
-    static var previews: some View {
-        GoalCardBig()
-    }
-}
-*/
+ static var previews: some View {
+ GoalCardBig()
+ }
+ }
+ */

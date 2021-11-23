@@ -10,9 +10,9 @@ import SwiftUI
 //Dovrebbe essere goal class ma ho problemi con l inheritance e per ora non riesco a capire, lo guardiamo con calma poi #1
 var goals : [StudyClass] = [
     StudyClass(nameGoal: "Math Exam", colorGoal: .blue, badgeGoal: "🎓",  dueDate: "17-12-2021", hourAmount: 30.0, studiedHours: 15.0),
-     StudyClass(nameGoal: "FCE Exam", colorGoal: .primary, badgeGoal: "🎓", dueDate: "20-12-2021", hourAmount: 100.0, studiedHours: 22.0),
+    StudyClass(nameGoal: "FCE Exam", colorGoal: .cyan, badgeGoal: "🎓", dueDate: "20-12-2021", hourAmount: 100.0, studiedHours: 22.0),
     
-     StudyClass(nameGoal: "Study Swift", colorGoal: .pink, badgeGoal: "🎓",  dueDate: "20-12-2021", hourAmount: 1000, studiedHours: 250.0),
+     StudyClass(nameGoal: "Study Swift", colorGoal: .green, badgeGoal: "🎓",  dueDate: "20-12-2021", hourAmount: 1000, studiedHours: 250.0),
     
     StudyClass(nameGoal: "Metodi Matematici", colorGoal: .red, badgeGoal: "🎓",  dueDate: "20-12-2021", hourAmount: 100.0, studiedHours: 10.0),
     
