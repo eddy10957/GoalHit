@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct TabBar: View {
-    @AppStorage("showOnBoarding") var showOnBoarding = true
     
+    @AppStorage("showOnBoarding") var showOnBoarding = true
     
     var body: some View {
         
@@ -23,7 +23,7 @@ struct TabBar: View {
             }
             .tag(3)
         }
-        .accentColor(.green)
+        //.accentColor(.green)
         .sheet(isPresented: $showOnBoarding, content: {
             Onboarding(isPresented: $showOnBoarding)
         })
