@@ -8,7 +8,7 @@ struct CircularProgressBar: View {
         ZStack {
             Circle()
                 .stroke(lineWidth: 15.0)
-                .opacity(0.3)
+                .opacity(0.5)
                 .foregroundColor(progressGoal.colorGoal)
             
             Circle()

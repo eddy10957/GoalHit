@@ -16,7 +16,7 @@ struct GoalCard : View{
                 .strokeBorder(goal.colorGoal)
             RoundedRectangle(cornerRadius: radius)
                 .fill(goal.colorGoal)
-                .opacity(0.1)
+                .opacity(0.3)
             HStack{
                 VStack(alignment: .center){
                     CircularProgressBar(progressGoal: goal)
