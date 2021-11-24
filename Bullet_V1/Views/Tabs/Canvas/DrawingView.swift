@@ -59,6 +59,8 @@ struct DrawingView: View {
                 
                 ZStack {
                     Color.white
+                    Image("Rule Basic")
+                        .resizable()
                     
                     ForEach(lines){ line in
                         DrawingShape(points: line.points)
