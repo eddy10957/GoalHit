@@ -6,7 +6,7 @@
 import SwiftUI
 
 struct Rewards: View {
-    
+   
     var body: some View {
         
         
@@ -25,7 +25,7 @@ struct Rewards: View {
                             Spacer()
                         }
                         .padding()
-                        RewardsRow(badgeIcon: "🎓")
+                        RewardsRow(badgeIcon: "🎓", isCompleted: true)
                         
                         
                         HStack {
@@ -36,7 +36,7 @@ struct Rewards: View {
                             Spacer()
                         }
                         .padding()
-                        RewardsRow(badgeIcon: "🏀")
+                        RewardsRow(badgeIcon: "🏀", isCompleted: false)
                         
                         
                         
@@ -48,7 +48,7 @@ struct Rewards: View {
                             Spacer()
                         }
                         .padding()
-                        RewardsRow(badgeIcon: "🏋️")
+                        RewardsRow(badgeIcon: "🏋️" , isCompleted : false)
                         
                     }
                     .padding()
