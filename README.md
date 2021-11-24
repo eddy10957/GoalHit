@@ -1,4 +1,4 @@
-# Bullet v1
+# GoalHit
 
 ## Team: TTF - Three Times Four
 * Edoardo Troianiello
